@@ -1,0 +1,49 @@
+# Used by .github/workflows/pr-checks.yml -> auto-label job (actions/labeler@v5).
+
+'area:app':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'app/**'
+
+'area:landing':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'landing/**'
+
+'area:ai-coach':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'ai-coach/**'
+
+'area:supabase':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'supabase/**'
+
+'area:brand':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'brand/**'
+
+'area:content':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'content/**'
+
+'area:docs':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'docs/**'
+          - '**/*.md'
+
+'github-actions':
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/workflows/**'
+          - '.github/actions/**'
+
+'docker':
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/Dockerfile'
+          - '**/docker-compose*.yml'

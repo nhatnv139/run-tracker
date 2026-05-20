@@ -1,0 +1,67 @@
+[
+  {
+    "id": "weather_heat",
+    "trigger": "temp_above_32c",
+    "category": "weather",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Trời nóng {temp} độ. Uống nước thường xuyên nhé.",
+      "Nhiệt độ cao. Giảm pace và tăng tần suất uống nước.",
+      "Nóng quá. Nếu chóng mặt thì dừng ngay.",
+      "Nắng gắt. Cố gắng chạy bóng râm nếu có.",
+      "Trời {temp} độ. Cơ thể mất nước nhanh hơn, lưu ý."
+    ]
+  },
+  {
+    "id": "weather_rain",
+    "trigger": "rain_detected",
+    "category": "weather",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Trời đang mưa. Chú ý mặt đường trơn.",
+      "Mưa rồi. Bước cẩn thận, đặc biệt khi xuống dốc.",
+      "Đường ướt. Giảm tốc khi vào cua.",
+      "Mưa nhẹ, vẫn chạy được. Nhưng để ý đường.",
+      "Trời mưa. Nếu mưa lớn thì tìm chỗ trú nhé."
+    ]
+  },
+  {
+    "id": "weather_cold",
+    "trigger": "temp_below_15c",
+    "category": "weather",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Trời lạnh {temp} độ. Khởi động kỹ hơn bình thường.",
+      "Lạnh đấy. Giữ ấm cổ và tay.",
+      "Nhiệt thấp. Cơ dễ chấn thương khi chưa nóng máy.",
+      "Trời {temp} độ. Đừng cởi áo khoác quá sớm."
+    ]
+  },
+  {
+    "id": "weather_aqi_high",
+    "trigger": "aqi_above_150",
+    "category": "weather",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Chỉ số AQI {aqi} - không khí xấu.",
+      "AQI cao. Hôm nay nên chạy ngắn lại, hoặc tập trong nhà.",
+      "Bụi mịn nhiều. Cân nhắc dùng khẩu trang khi chạy.",
+      "Chất lượng không khí kém. Phổi bạn sẽ cảm ơn nếu nghỉ."
+    ]
+  },
+  {
+    "id": "weather_perfect",
+    "trigger": "weather_perfect",
+    "category": "weather",
+    "style": "funny",
+    "lang": "vi-VN",
+    "templates": [
+      "Thời tiết đẹp như tranh. Tận hưởng nhé.",
+      "{temp} độ, không mưa. Trời chiều người chạy bộ."
+    ]
+  }
+]

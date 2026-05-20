@@ -1,0 +1,99 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in RunVie.
+title: "[bug]: "
+labels: ["type:bug", "status:wip"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected module
+      description: Which module is affected?
+      options:
+        - app (Flutter)
+        - landing (Next.js)
+        - ai-coach (FastAPI)
+        - supabase (DB)
+        - brand/content
+        - docs
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      description: App version, build number, or commit SHA.
+      placeholder: 1.0.0 / abc1234
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reliably reproduce the issue.
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste relevant logs or attach screenshots.
+      render: shell
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - p0 (production down)
+        - p1 (major impact)
+        - p2 (moderate)
+        - p3 (minor / cosmetic)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmations
+      options:
+        - label: I searched existing issues and this is not a duplicate.
+          required: true
+        - label: I am running the latest available version.
+          required: false

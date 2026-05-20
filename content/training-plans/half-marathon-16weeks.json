@@ -1,0 +1,114 @@
+{
+  "code": "half-marathon-16weeks",
+  "name_vi": "Bán marathon - 16 tuần",
+  "name_en": "Half Marathon - 16 Weeks",
+  "race_distance": "half",
+  "weeks": 16,
+  "sessions_per_week": 5,
+  "level": "intermediate",
+  "description_vi": "Chương trình 16 tuần để chinh phục bán marathon 21.1km. 5 buổi mỗi tuần. Long run đạt đỉnh 18-20km trước khi taper. Đã chạy được 10K trước khi bắt đầu plan này.",
+  "description_en": "16-week plan to conquer 21.1K half marathon. 5 sessions per week. Long run peaks at 18-20K before taper. Prerequisite: can already finish 10K.",
+  "tips_vi": [
+    "Long run là buổi quan trọng nhất, đừng bỏ.",
+    "Pace long run chậm hơn race pace 30-60 giây mỗi km.",
+    "Tập nạp gel hoặc chuối từ tuần 8 trở đi.",
+    "Giày chạy nên thay sau 600-800km."
+  ],
+  "workouts": [
+    {"week_index": 1, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 1950, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 5km tốc độ thoải mái.", "description_en": "Easy 5K conversational.", "notes_vi": null},
+    {"week_index": 1, "day_index": 2, "type": "interval", "distance_m": 6000, "duration_s": 2160, "pace_target_s_per_km": 320, "hr_zone": 4, "description_vi": "Khởi động 1.5km. 5 x 400m pace 5:20/km, nghỉ 90s. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 5x400m at 5:20/km, 90s rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 1, "day_index": 3, "type": "easy", "distance_m": 6000, "duration_s": 2400, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 1, "day_index": 4, "type": "tempo", "distance_m": 6000, "duration_s": 2160, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 4km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 4K at 5:50/km. Cool down 1K.", "notes_vi": null},
+    {"week_index": 1, "day_index": 6, "type": "long", "distance_m": 10000, "duration_s": 4200, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 10km. Khởi đầu chương trình.", "description_en": "Long run 10K. Plan starts.", "notes_vi": null},
+
+    {"week_index": 2, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 1950, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 2, "day_index": 2, "type": "interval", "distance_m": 7000, "duration_s": 2460, "pace_target_s_per_km": 320, "hr_zone": 4, "description_vi": "Khởi động 1.5km. 6 x 400m pace 5:20, nghỉ 90s. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 6x400m at 5:20/km, 90s rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 2, "day_index": 3, "type": "easy", "distance_m": 6000, "duration_s": 2400, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 2, "day_index": 4, "type": "tempo", "distance_m": 7000, "duration_s": 2520, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 5km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 5K at 5:50/km. Cool down 1K.", "notes_vi": null},
+    {"week_index": 2, "day_index": 6, "type": "long", "distance_m": 11000, "duration_s": 4620, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 11km.", "description_en": "Long run 11K.", "notes_vi": null},
+
+    {"week_index": 3, "day_index": 0, "type": "easy", "distance_m": 6000, "duration_s": 2340, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 3, "day_index": 2, "type": "interval", "distance_m": 8000, "duration_s": 2760, "pace_target_s_per_km": 320, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 5 x 800m pace 5:20, nghỉ 2 phút đi bộ. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 5x800m at 5:20/km, 2min walk. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 3, "day_index": 3, "type": "easy", "distance_m": 6000, "duration_s": 2400, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 3, "day_index": 4, "type": "tempo", "distance_m": 8000, "duration_s": 2880, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 6km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 6K at 5:50/km. Cool down 1K.", "notes_vi": null},
+    {"week_index": 3, "day_index": 6, "type": "long", "distance_m": 13000, "duration_s": 5460, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 13km.", "description_en": "Long run 13K.", "notes_vi": null},
+
+    {"week_index": 4, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 1950, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 5km. Tuần giảm tải.", "description_en": "Easy 5K. Deload week.", "notes_vi": null},
+    {"week_index": 4, "day_index": 2, "type": "tempo", "distance_m": 6000, "duration_s": 2160, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 4km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 4K at 5:50/km. Cool down 1K.", "notes_vi": null},
+    {"week_index": 4, "day_index": 3, "type": "easy", "distance_m": 5000, "duration_s": 2000, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 4, "day_index": 4, "type": "rest", "distance_m": null, "duration_s": null, "pace_target_s_per_km": null, "hr_zone": null, "description_vi": "Nghỉ.", "description_en": "Rest.", "notes_vi": null},
+    {"week_index": 4, "day_index": 6, "type": "long", "distance_m": 10000, "duration_s": 4200, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 10km, đã rút.", "description_en": "Long run 10K reduced.", "notes_vi": null},
+
+    {"week_index": 5, "day_index": 0, "type": "easy", "distance_m": 6000, "duration_s": 2340, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 5, "day_index": 2, "type": "interval", "distance_m": 9000, "duration_s": 3120, "pace_target_s_per_km": 320, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 6 x 800m pace 5:20, nghỉ 2 phút. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 6x800m at 5:20/km, 2min rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 5, "day_index": 3, "type": "easy", "distance_m": 7000, "duration_s": 2800, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 7km.", "description_en": "Easy 7K.", "notes_vi": null},
+    {"week_index": 5, "day_index": 4, "type": "tempo", "distance_m": 9000, "duration_s": 3240, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 7km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 7K at 5:50/km. Cool down 1K.", "notes_vi": null},
+    {"week_index": 5, "day_index": 6, "type": "long", "distance_m": 14000, "duration_s": 5880, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 14km. Tập nạp gel ở km 7.", "description_en": "Long run 14K. Practice gel at K7.", "notes_vi": null},
+
+    {"week_index": 6, "day_index": 0, "type": "easy", "distance_m": 6000, "duration_s": 2340, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 6, "day_index": 2, "type": "interval", "distance_m": 10000, "duration_s": 3480, "pace_target_s_per_km": 320, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 4 x 1200m pace 5:20, nghỉ 2.5 phút. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 4x1200m at 5:20/km, 2.5min rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 6, "day_index": 3, "type": "easy", "distance_m": 7000, "duration_s": 2800, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 7km.", "description_en": "Easy 7K.", "notes_vi": null},
+    {"week_index": 6, "day_index": 4, "type": "tempo", "distance_m": 9000, "duration_s": 3240, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 7km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 7K. Cool down 1K.", "notes_vi": null},
+    {"week_index": 6, "day_index": 6, "type": "long", "distance_m": 16000, "duration_s": 6720, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 16km. Mang nước và gel.", "description_en": "Long run 16K. Bring water and gel.", "notes_vi": null},
+
+    {"week_index": 7, "day_index": 0, "type": "easy", "distance_m": 6000, "duration_s": 2340, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 7, "day_index": 2, "type": "tempo", "distance_m": 10000, "duration_s": 3600, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 8km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 8K at 5:50/km. Cool down 1K.", "notes_vi": "Tempo dài, tập race pace."},
+    {"week_index": 7, "day_index": 3, "type": "easy", "distance_m": 7000, "duration_s": 2800, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 7km.", "description_en": "Easy 7K.", "notes_vi": null},
+    {"week_index": 7, "day_index": 4, "type": "interval", "distance_m": 8000, "duration_s": 2760, "pace_target_s_per_km": 320, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 5 x 1000m pace 5:20, nghỉ 2 phút. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 5x1000m at 5:20/km, 2min rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 7, "day_index": 6, "type": "long", "distance_m": 17000, "duration_s": 7140, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 17km.", "description_en": "Long run 17K.", "notes_vi": null},
+
+    {"week_index": 8, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 1950, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 5km. Tuần giảm tải.", "description_en": "Easy 5K. Deload.", "notes_vi": null},
+    {"week_index": 8, "day_index": 2, "type": "tempo", "distance_m": 7000, "duration_s": 2520, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 5km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 5K. Cool down 1K.", "notes_vi": null},
+    {"week_index": 8, "day_index": 3, "type": "easy", "distance_m": 5000, "duration_s": 2000, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 8, "day_index": 4, "type": "rest", "distance_m": null, "duration_s": null, "pace_target_s_per_km": null, "hr_zone": null, "description_vi": "Nghỉ.", "description_en": "Rest.", "notes_vi": null},
+    {"week_index": 8, "day_index": 6, "type": "long", "distance_m": 13000, "duration_s": 5460, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 13km.", "description_en": "Long run 13K.", "notes_vi": null},
+
+    {"week_index": 9, "day_index": 0, "type": "easy", "distance_m": 7000, "duration_s": 2730, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 7km.", "description_en": "Easy 7K.", "notes_vi": null},
+    {"week_index": 9, "day_index": 2, "type": "interval", "distance_m": 11000, "duration_s": 3720, "pace_target_s_per_km": 310, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 6 x 1000m pace 5:10, nghỉ 2 phút. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 6x1000m at 5:10/km, 2min rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 9, "day_index": 3, "type": "easy", "distance_m": 8000, "duration_s": 3200, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 8km.", "description_en": "Easy 8K.", "notes_vi": null},
+    {"week_index": 9, "day_index": 4, "type": "tempo", "distance_m": 11000, "duration_s": 3960, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 9km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 9K. Cool down 1K.", "notes_vi": null},
+    {"week_index": 9, "day_index": 6, "type": "long", "distance_m": 18000, "duration_s": 7560, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 18km. Đỉnh đầu tiên.", "description_en": "Long run 18K, first peak.", "notes_vi": "Tập gel mỗi 6km."},
+
+    {"week_index": 10, "day_index": 0, "type": "easy", "distance_m": 6000, "duration_s": 2340, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 10, "day_index": 2, "type": "interval", "distance_m": 10000, "duration_s": 3360, "pace_target_s_per_km": 310, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 4 x 1600m pace 5:10, nghỉ 3 phút. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 4x1600m at 5:10/km, 3min rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 10, "day_index": 3, "type": "easy", "distance_m": 8000, "duration_s": 3200, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 8km.", "description_en": "Easy 8K.", "notes_vi": null},
+    {"week_index": 10, "day_index": 4, "type": "tempo", "distance_m": 12000, "duration_s": 4320, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 10km pace 5:50. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 10K. Cool down 1K.", "notes_vi": null},
+    {"week_index": 10, "day_index": 6, "type": "long", "distance_m": 19000, "duration_s": 7980, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 19km.", "description_en": "Long run 19K.", "notes_vi": null},
+
+    {"week_index": 11, "day_index": 0, "type": "easy", "distance_m": 6000, "duration_s": 2340, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 11, "day_index": 2, "type": "interval", "distance_m": 10000, "duration_s": 3480, "pace_target_s_per_km": 310, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 5 x 1200m pace 5:10, nghỉ 2.5 phút. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 5x1200m at 5:10/km, 2.5min rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 11, "day_index": 3, "type": "easy", "distance_m": 8000, "duration_s": 3200, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 8km.", "description_en": "Easy 8K.", "notes_vi": null},
+    {"week_index": 11, "day_index": 4, "type": "tempo", "distance_m": 13000, "duration_s": 4680, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 11km pace race target. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 11K at race pace. Cool down 1K.", "notes_vi": "Cảm nhận race pace."},
+    {"week_index": 11, "day_index": 6, "type": "long", "distance_m": 20000, "duration_s": 8400, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 20km. Đỉnh.", "description_en": "Long run 20K, the peak.", "notes_vi": "Sau hôm nay bắt đầu taper."},
+
+    {"week_index": 12, "day_index": 0, "type": "easy", "distance_m": 6000, "duration_s": 2340, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 6km. Bắt đầu taper.", "description_en": "Easy 6K. Taper begins.", "notes_vi": null},
+    {"week_index": 12, "day_index": 2, "type": "tempo", "distance_m": 10000, "duration_s": 3600, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 8km pace race target. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 8K at race pace. Cool down 1K.", "notes_vi": null},
+    {"week_index": 12, "day_index": 3, "type": "easy", "distance_m": 6000, "duration_s": 2400, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 12, "day_index": 4, "type": "interval", "distance_m": 7000, "duration_s": 2400, "pace_target_s_per_km": 310, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 4 x 800m pace 5:10, nghỉ 90s. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 4x800m at 5:10/km, 90s rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 12, "day_index": 6, "type": "long", "distance_m": 15000, "duration_s": 6300, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 15km, đã giảm.", "description_en": "Long run 15K, reduced.", "notes_vi": null},
+
+    {"week_index": 13, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 1950, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 13, "day_index": 2, "type": "tempo", "distance_m": 9000, "duration_s": 3240, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 7km pace race target. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 7K at race pace. Cool down 1K.", "notes_vi": null},
+    {"week_index": 13, "day_index": 3, "type": "easy", "distance_m": 6000, "duration_s": 2400, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 6km.", "description_en": "Easy 6K.", "notes_vi": null},
+    {"week_index": 13, "day_index": 4, "type": "interval", "distance_m": 7000, "duration_s": 2520, "pace_target_s_per_km": 310, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 5 x 600m pace 5:10, nghỉ 90s. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 5x600m at 5:10/km, 90s rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 13, "day_index": 6, "type": "long", "distance_m": 13000, "duration_s": 5460, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 13km.", "description_en": "Long run 13K.", "notes_vi": null},
+
+    {"week_index": 14, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 1950, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 14, "day_index": 2, "type": "tempo", "distance_m": 8000, "duration_s": 2880, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 6km pace race target. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 6K at race pace. Cool down 1K.", "notes_vi": null},
+    {"week_index": 14, "day_index": 3, "type": "easy", "distance_m": 5000, "duration_s": 2000, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 14, "day_index": 4, "type": "interval", "distance_m": 6000, "duration_s": 2160, "pace_target_s_per_km": 310, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 4 x 600m pace 5:10, nghỉ 90s. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 4x600m at 5:10/km, 90s rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 14, "day_index": 6, "type": "long", "distance_m": 11000, "duration_s": 4620, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 11km.", "description_en": "Long run 11K.", "notes_vi": null},
+
+    {"week_index": 15, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 1950, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 15, "day_index": 2, "type": "tempo", "distance_m": 6000, "duration_s": 2160, "pace_target_s_per_km": 350, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 4km pace race target. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 4K at race pace. Cool down 1K.", "notes_vi": null},
+    {"week_index": 15, "day_index": 3, "type": "easy", "distance_m": 5000, "duration_s": 2000, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 15, "day_index": 4, "type": "interval", "distance_m": 5000, "duration_s": 1800, "pace_target_s_per_km": 310, "hr_zone": 4, "description_vi": "Khởi động 1.5km. 4 x 400m pace 5:10, nghỉ 90s. Hạ nhiệt 1.5km.", "description_en": "Warm up 1.5K. 4x400m at 5:10/km, 90s rest. Cool down 1.5K.", "notes_vi": null},
+    {"week_index": 15, "day_index": 6, "type": "long", "distance_m": 9000, "duration_s": 3780, "pace_target_s_per_km": 420, "hr_zone": 2, "description_vi": "Long run 9km nhẹ.", "description_en": "Long run 9K easy.", "notes_vi": null},
+
+    {"week_index": 16, "day_index": 0, "type": "easy", "distance_m": 4000, "duration_s": 1560, "pace_target_s_per_km": 390, "hr_zone": 2, "description_vi": "Easy 4km. Tuần race.", "description_en": "Easy 4K. Race week.", "notes_vi": null},
+    {"week_index": 16, "day_index": 2, "type": "interval", "distance_m": 4000, "duration_s": 1440, "pace_target_s_per_km": 320, "hr_zone": 4, "description_vi": "Khởi động 1km. 3 x 400m pace 5:20, nghỉ 90s. Hạ nhiệt 1km. Kích hoạt nhẹ.", "description_en": "Warm up 1K. 3x400m at 5:20/km, 90s rest. Cool down 1K. Light activation.", "notes_vi": null},
+    {"week_index": 16, "day_index": 3, "type": "easy", "distance_m": 4000, "duration_s": 1600, "pace_target_s_per_km": 400, "hr_zone": 2, "description_vi": "Easy 4km. Hai ngày trước race.", "description_en": "Easy 4K. Two days before race.", "notes_vi": null},
+    {"week_index": 16, "day_index": 4, "type": "rest", "distance_m": null, "duration_s": null, "pace_target_s_per_km": null, "hr_zone": null, "description_vi": "Nghỉ. Chuẩn bị tinh thần.", "description_en": "Rest. Mental prep.", "notes_vi": "Ngủ sớm, uống đủ nước."},
+    {"week_index": 16, "day_index": 6, "type": "long", "distance_m": 21097, "duration_s": 7500, "pace_target_s_per_km": 350, "hr_zone": 5, "description_vi": "Race day. Khởi động 1km. 21.1km pace race target 5:50. Đặt đồng hồ ở chế độ pace để dễ kiểm soát.", "description_en": "Race day. Warm up 1K. 21.1K at race pace 5:50. Set watch to pace screen.", "notes_vi": "Chúc bạn về đích an toàn và vui vẻ."}
+  ]
+}

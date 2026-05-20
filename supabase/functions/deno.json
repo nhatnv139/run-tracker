@@ -1,0 +1,43 @@
+{
+  "importMap": "./import_map.json",
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "lib": ["deno.window", "deno.ns", "es2022"]
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"],
+      "exclude": ["no-explicit-any"]
+    }
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "semiColons": true,
+    "singleQuote": false
+  },
+  "tasks": {
+    "check": "deno check **/*.ts",
+    "test": "deno test --allow-all --import-map=./import_map.json",
+    "lint": "deno lint",
+    "fmt": "deno fmt",
+    "deploy:sync-activity": "supabase functions deploy sync-activity",
+    "deploy:award-badges": "supabase functions deploy award-badges",
+    "deploy:redeem-coin": "supabase functions deploy redeem-coin",
+    "deploy:recalc-streak": "supabase functions deploy recalc-streak",
+    "deploy:generate-training-plan": "supabase functions deploy generate-training-plan",
+    "deploy:ai-chat-proxy": "supabase functions deploy ai-chat-proxy",
+    "deploy:leaderboard": "supabase functions deploy leaderboard",
+    "deploy:upload-route": "supabase functions deploy upload-route",
+    "deploy:live-track-publish": "supabase functions deploy live-track-publish",
+    "deploy:live-track-subscribe": "supabase functions deploy live-track-subscribe",
+    "deploy:anomaly-check": "supabase functions deploy anomaly-check",
+    "deploy:device-register": "supabase functions deploy device-register",
+    "deploy:send-push": "supabase functions deploy send-push",
+    "deploy:weekly-recap": "supabase functions deploy weekly-recap",
+    "deploy:delete-account": "supabase functions deploy delete-account",
+    "deploy:all": "deno task deploy:sync-activity && deno task deploy:award-badges && deno task deploy:redeem-coin && deno task deploy:recalc-streak && deno task deploy:generate-training-plan && deno task deploy:ai-chat-proxy && deno task deploy:leaderboard && deno task deploy:upload-route && deno task deploy:live-track-publish && deno task deploy:live-track-subscribe && deno task deploy:anomaly-check && deno task deploy:device-register && deno task deploy:send-push && deno task deploy:weekly-recap && deno task deploy:delete-account"
+  }
+}

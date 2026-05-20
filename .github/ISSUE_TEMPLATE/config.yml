@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: RunVie Discord community
+    url: https://discord.gg/runvie
+    about: Join the RunVie Discord for questions, ideas and community support.
+  - name: Security disclosure
+    url: mailto:security@runvie.app
+    about: Please report security vulnerabilities privately via email.
+  - name: Documentation
+    url: https://docs.runvie.app
+    about: Read the official RunVie documentation.

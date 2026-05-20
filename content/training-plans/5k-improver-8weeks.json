@@ -1,0 +1,58 @@
+{
+  "code": "5k-improver-8weeks",
+  "name_vi": "5K dưới 30 phút - 8 tuần",
+  "name_en": "5K Sub-30 Improver - 8 Weeks",
+  "race_distance": "5k",
+  "weeks": 8,
+  "sessions_per_week": 4,
+  "level": "intermediate",
+  "description_vi": "Chương trình 8 tuần dành cho người đã chạy được 5km và muốn về đích dưới 30 phút. Kết hợp interval, tempo, long run và easy run. Mục tiêu pace 6:00/km hoặc nhanh hơn.",
+  "description_en": "8-week plan for runners who can already finish 5K and aim to break 30 minutes. Mix of intervals, tempo, long runs, easy runs. Target pace 6:00/km or faster.",
+  "tips_vi": [
+    "Tempo run là tốc độ thoải mái khó chịu - vẫn thở được nhưng không nói chuyện liền mạch.",
+    "Interval đẩy lên cao nhất 90 phần trăm sức.",
+    "Long run luôn chậm, đừng cố nhanh.",
+    "Cuối tuần nghỉ 1 ngày trước race."
+  ],
+  "workouts": [
+    {"week_index": 1, "day_index": 0, "type": "easy", "distance_m": 4000, "duration_s": 1800, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Chạy nhẹ 4km tốc độ thoải mái, có thể trò chuyện không hụt hơi. Mục tiêu làm quen lại với nhịp chân.", "description_en": "Easy 4K at conversational pace. Goal is to settle into rhythm.", "notes_vi": "Tuần đầu, đừng cố."},
+    {"week_index": 1, "day_index": 2, "type": "interval", "distance_m": 4000, "duration_s": 1500, "pace_target_s_per_km": 330, "hr_zone": 4, "description_vi": "Khởi động 1km nhẹ. Sau đó 5 lần x 400m chạy nhanh pace 5:30, nghỉ 90 giây đi bộ giữa các đoạn. Hạ nhiệt 1km.", "description_en": "Warm up 1K easy. Then 5x400m fast at 5:30/km pace, 90s walk recovery. Cool down 1K.", "notes_vi": "400m đầu tiên hơi nặng vì cơ chưa nóng."},
+    {"week_index": 1, "day_index": 4, "type": "easy", "distance_m": 4000, "duration_s": 1800, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Chạy phục hồi 4km nhẹ nhàng. Tập trung hít thở mũi.", "description_en": "Recovery 4K easy. Focus on nasal breathing.", "notes_vi": "Phục hồi sau interval rất quan trọng."},
+    {"week_index": 1, "day_index": 6, "type": "long", "distance_m": 6000, "duration_s": 2700, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Long run 6km tốc độ chậm. Đây là buổi xây nền sức bền.", "description_en": "Long run 6K easy. Endurance base.", "notes_vi": "Chậm hơn pace mục tiêu race là đúng."},
+
+    {"week_index": 2, "day_index": 0, "type": "easy", "distance_m": 4000, "duration_s": 1800, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 4km, giữ pace 7:30/km hoặc chậm hơn.", "description_en": "Easy 4K at 7:30/km or slower.", "notes_vi": "Cảm nhận cơ thể."},
+    {"week_index": 2, "day_index": 2, "type": "tempo", "distance_m": 5000, "duration_s": 2100, "pace_target_s_per_km": 360, "hr_zone": 4, "description_vi": "Khởi động 1km nhẹ. Chạy tempo 3km pace 6:00/km. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 3K at 6:00/km. Cool down 1K.", "notes_vi": "Tempo: thở mạnh nhưng kiểm soát được."},
+    {"week_index": 2, "day_index": 4, "type": "easy", "distance_m": 4000, "duration_s": 1800, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 4km phục hồi.", "description_en": "Easy recovery 4K.", "notes_vi": null},
+    {"week_index": 2, "day_index": 6, "type": "long", "distance_m": 7000, "duration_s": 3150, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Long run 7km. Pace 7:30/km, tăng thêm 1km so với tuần trước.", "description_en": "Long run 7K at 7:30/km, +1K from last week.", "notes_vi": "Mang theo nước nếu thời tiết nóng."},
+
+    {"week_index": 3, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 2250, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 5km, đều đặn pace 7:30.", "description_en": "Easy 5K steady at 7:30/km.", "notes_vi": null},
+    {"week_index": 3, "day_index": 2, "type": "interval", "distance_m": 5000, "duration_s": 1860, "pace_target_s_per_km": 330, "hr_zone": 4, "description_vi": "Khởi động 1km. 6 lần x 400m pace 5:30/km, nghỉ 90 giây đi bộ. Hạ nhiệt 1km.", "description_en": "Warm up 1K. 6x400m at 5:30/km, 90s walk. Cool down 1K.", "notes_vi": "Thêm 1 lần lặp so với tuần 1."},
+    {"week_index": 3, "day_index": 4, "type": "easy", "distance_m": 5000, "duration_s": 2250, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 5km phục hồi.", "description_en": "Easy recovery 5K.", "notes_vi": null},
+    {"week_index": 3, "day_index": 6, "type": "long", "distance_m": 8000, "duration_s": 3600, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Long run 8km pace chậm.", "description_en": "Long run 8K easy.", "notes_vi": "Tuần này là tuần build."},
+
+    {"week_index": 4, "day_index": 0, "type": "easy", "distance_m": 4000, "duration_s": 1800, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Tuần phục hồi. Easy 4km nhẹ.", "description_en": "Recovery week. Easy 4K.", "notes_vi": "Cơ thể cần giảm tải để hấp thụ."},
+    {"week_index": 4, "day_index": 2, "type": "tempo", "distance_m": 5000, "duration_s": 2040, "pace_target_s_per_km": 360, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 3km pace 6:00. Hạ nhiệt 1km. Cảm nhận pace.", "description_en": "Warm up 1K. Tempo 3K at 6:00/km. Cool down 1K.", "notes_vi": null},
+    {"week_index": 4, "day_index": 4, "type": "rest", "distance_m": null, "duration_s": null, "pace_target_s_per_km": null, "hr_zone": null, "description_vi": "Nghỉ tuần giảm tải.", "description_en": "Rest, deload week.", "notes_vi": null},
+    {"week_index": 4, "day_index": 6, "type": "long", "distance_m": 6000, "duration_s": 2700, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Long run nhẹ 6km. Tuần giảm tải nên cắt 2km.", "description_en": "Light long run 6K. Cut back during deload.", "notes_vi": null},
+
+    {"week_index": 5, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 2250, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 5km, vào pha chính.", "description_en": "Easy 5K, into main phase.", "notes_vi": null},
+    {"week_index": 5, "day_index": 2, "type": "interval", "distance_m": 6000, "duration_s": 2160, "pace_target_s_per_km": 330, "hr_zone": 5, "description_vi": "Khởi động 1.5km. 5 lần x 800m pace 5:30, nghỉ 2 phút đi bộ giữa. Hạ nhiệt 1km.", "description_en": "Warm up 1.5K. 5x800m at 5:30/km, 2min walk. Cool down 1K.", "notes_vi": "Tăng độ dài đoạn lên 800m, khó hơn nhiều."},
+    {"week_index": 5, "day_index": 4, "type": "easy", "distance_m": 5000, "duration_s": 2250, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 5km phục hồi sau interval nặng.", "description_en": "Easy 5K recovery after hard intervals.", "notes_vi": "Chú ý chân, nếu nhức nhiều hãy giảm."},
+    {"week_index": 5, "day_index": 6, "type": "long", "distance_m": 8000, "duration_s": 3600, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Long run 8km easy.", "description_en": "Long run 8K easy.", "notes_vi": null},
+
+    {"week_index": 6, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 2250, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 6, "day_index": 2, "type": "tempo", "distance_m": 6500, "duration_s": 2580, "pace_target_s_per_km": 360, "hr_zone": 4, "description_vi": "Khởi động 1km. Tempo 4.5km pace 6:00. Hạ nhiệt 1km.", "description_en": "Warm up 1K. Tempo 4.5K at 6:00/km. Cool down 1K.", "notes_vi": "Tempo dài hơn, giả lập race pace."},
+    {"week_index": 6, "day_index": 4, "type": "easy", "distance_m": 5000, "duration_s": 2250, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 5km.", "description_en": "Easy 5K.", "notes_vi": null},
+    {"week_index": 6, "day_index": 6, "type": "long", "distance_m": 9000, "duration_s": 4050, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Long run 9km. Đỉnh của plan.", "description_en": "Long run 9K. Peak of the plan.", "notes_vi": "Nạp đường nhẹ giữa nếu thấy mệt."},
+
+    {"week_index": 7, "day_index": 0, "type": "easy", "distance_m": 5000, "duration_s": 2250, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 5km, vào tuần taper.", "description_en": "Easy 5K, taper week.", "notes_vi": "Taper là giảm tải để tích năng lượng."},
+    {"week_index": 7, "day_index": 2, "type": "interval", "distance_m": 5000, "duration_s": 1860, "pace_target_s_per_km": 330, "hr_zone": 4, "description_vi": "Khởi động 1km. 4 lần x 600m pace 5:30, nghỉ 90s. Hạ nhiệt 1km.", "description_en": "Warm up 1K. 4x600m at 5:30/km, 90s rest. Cool down 1K.", "notes_vi": "Giữ tốc nhưng giảm tổng lượng."},
+    {"week_index": 7, "day_index": 4, "type": "easy", "distance_m": 4000, "duration_s": 1800, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 4km nhẹ.", "description_en": "Easy 4K.", "notes_vi": null},
+    {"week_index": 7, "day_index": 6, "type": "long", "distance_m": 6000, "duration_s": 2700, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Long run 6km, đã rút bớt.", "description_en": "Long run 6K, reduced.", "notes_vi": null},
+
+    {"week_index": 8, "day_index": 0, "type": "easy", "distance_m": 4000, "duration_s": 1800, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 4km nhẹ. Tuần race.", "description_en": "Easy 4K. Race week.", "notes_vi": "Giữ chân nhẹ, không cố."},
+    {"week_index": 8, "day_index": 2, "type": "interval", "distance_m": 3000, "duration_s": 1200, "pace_target_s_per_km": 330, "hr_zone": 4, "description_vi": "Khởi động 1km. 3 lần x 300m pace 5:30, nghỉ 90s. Hạ nhiệt 1km. Chỉ để kích hoạt chân.", "description_en": "Warm up 1K. 3x300m at 5:30/km, 90s rest. Cool down 1K. Just to activate legs.", "notes_vi": "Buổi ngắn để cơ vẫn nhớ tốc độ."},
+    {"week_index": 8, "day_index": 4, "type": "easy", "distance_m": 3000, "duration_s": 1350, "pace_target_s_per_km": 450, "hr_zone": 2, "description_vi": "Easy 3km nhẹ. Hai ngày trước race.", "description_en": "Easy 3K. Two days before race.", "notes_vi": "Nhẹ tay với chân."},
+    {"week_index": 8, "day_index": 6, "type": "tempo", "distance_m": 5000, "duration_s": 1800, "pace_target_s_per_km": 360, "hr_zone": 5, "description_vi": "Ngày race. Khởi động 1km nhẹ. Chạy 5km tốc độ tối ưu pace 6:00 hoặc nhanh hơn. Hạ nhiệt sau race.", "description_en": "Race day. Warm up 1K easy. Run 5K at goal pace 6:00/km or faster. Cool down after.", "notes_vi": "Chúc bạn về dưới 30 phút."}
+  ]
+}

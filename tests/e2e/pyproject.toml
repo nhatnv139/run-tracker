@@ -1,0 +1,19 @@
+[project]
+name = "runvie-e2e-journey"
+version = "0.1.0"
+description = "Cross-system journey test for RunVie (Python)"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32",
+    "supabase>=2.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-xdist>=3.5",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = ["."]

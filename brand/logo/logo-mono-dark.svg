@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="640" height="160" role="img" aria-labelledby="rv-mono-dark-title">
+  <title id="rv-mono-dark-title">RunVie wordmark, black monochrome for light backgrounds</title>
+  <g transform="translate(20 20)">
+    <circle cx="60" cy="60" r="60" fill="none" stroke="#0A0A0A" stroke-width="8"/>
+    <path d="M15 70 C 30 53, 45 87, 60 70 S 90 53, 105 70"
+          fill="none"
+          stroke="#0A0A0A"
+          stroke-width="7.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <path d="M82 42 L104 42 L104 64"
+          fill="none"
+          stroke="#0A0A0A"
+          stroke-width="7.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <path d="M104 42 L72 74"
+          fill="none"
+          stroke="#0A0A0A"
+          stroke-width="7.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </g>
+  <text x="165"
+        y="108"
+        font-family="'Be Vietnam Pro', system-ui, sans-serif"
+        font-weight="800"
+        font-size="92"
+        letter-spacing="-3"
+        fill="#0A0A0A">RunVie</text>
+</svg>

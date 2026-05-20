@@ -1,0 +1,36 @@
+{
+  "$schema": "runvie-design-tokens-v1",
+  "description": "4pt grid spacing scale. Use these tokens for padding, margin, and gap. Do not introduce off-grid values.",
+  "unit": "px",
+  "grid": 4,
+  "scale": {
+    "0":   "0px",
+    "1":   "4px",
+    "2":   "8px",
+    "3":   "12px",
+    "4":   "16px",
+    "5":   "20px",
+    "6":   "24px",
+    "8":   "32px",
+    "10":  "40px",
+    "12":  "48px",
+    "16":  "64px",
+    "20":  "80px",
+    "24":  "96px",
+    "32":  "128px"
+  },
+  "aliases": {
+    "none":      "{scale.0}",
+    "xxs":       "{scale.1}",
+    "xs":        "{scale.2}",
+    "sm":        "{scale.3}",
+    "md":        "{scale.4}",
+    "lg":        "{scale.6}",
+    "xl":        "{scale.8}",
+    "2xl":       "{scale.12}",
+    "3xl":       "{scale.16}",
+    "section":   "{scale.20}",
+    "page":      "{scale.24}",
+    "hero":      "{scale.32}"
+  }
+}

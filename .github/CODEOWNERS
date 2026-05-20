@@ -1,0 +1,27 @@
+# RunVie code owners.
+# Order matters: the last matching pattern wins.
+
+*                       @runvie/maintainers
+
+/app/                   @runvie/mobile
+/app/**                 @runvie/mobile
+
+/ai-coach/              @runvie/backend
+/ai-coach/**            @runvie/backend
+
+/supabase/              @runvie/backend
+/supabase/**            @runvie/backend
+
+/landing/               @runvie/web
+/landing/**             @runvie/web
+
+/brand/                 @runvie/design
+/brand/**               @runvie/design
+/content/               @runvie/design
+/content/**             @runvie/design
+
+/docs/legal/            @runvie/legal
+/docs/legal/**          @runvie/legal
+
+/.github/               @runvie/maintainers
+/.github/**             @runvie/maintainers

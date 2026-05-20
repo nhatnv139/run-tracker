@@ -1,0 +1,41 @@
+services:
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "256mb", "--maxmemory-policy", "allkeys-lru"]
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  ai-coach:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      redis:
+        condition: service_healthy
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      REDIS_URL: redis://redis:6379/0
+      SENTRY_DSN: ${SENTRY_DSN:-}
+      MODEL_SONNET: ${MODEL_SONNET:-claude-sonnet-4-7}
+      MODEL_HAIKU: ${MODEL_HAIKU:-claude-haiku-4-5-20251001}
+      MAX_TOKENS_DEFAULT: ${MAX_TOKENS_DEFAULT:-1024}
+      ENABLE_CACHE: ${ENABLE_CACHE:-true}
+      APP_ENV: ${APP_ENV:-production}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      SUPABASE_URL: ${SUPABASE_URL:-}
+      SUPABASE_JWKS_URL: ${SUPABASE_JWKS_URL:-}
+      AUTH_REQUIRED: ${AUTH_REQUIRED:-false}
+    ports:
+      - "8000:8000"
+
+volumes:
+  redis-data:

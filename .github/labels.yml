@@ -1,0 +1,106 @@
+# Color-coded labels for the RunVie repo.
+# Sync with: .github/scripts/sync-labels.sh
+
+- name: 'type:bug'
+  color: 'd73a4a'
+  description: 'Something is not working'
+
+- name: 'type:feature'
+  color: 'a2eeef'
+  description: 'New feature or enhancement'
+
+- name: 'type:chore'
+  color: 'fef2c0'
+  description: 'Maintenance, tooling, deps'
+
+- name: 'type:refactor'
+  color: 'c5def5'
+  description: 'Code change with no behavior change'
+
+- name: 'type:docs'
+  color: '0075ca'
+  description: 'Documentation only changes'
+
+- name: 'type:test'
+  color: 'cfd3d7'
+  description: 'Add or update tests'
+
+- name: 'priority:p0'
+  color: 'b60205'
+  description: 'Critical, production down'
+
+- name: 'priority:p1'
+  color: 'd93f0b'
+  description: 'High priority'
+
+- name: 'priority:p2'
+  color: 'fbca04'
+  description: 'Medium priority'
+
+- name: 'priority:p3'
+  color: '0e8a16'
+  description: 'Low priority'
+
+- name: 'area:app'
+  color: '5319e7'
+  description: 'Flutter mobile app'
+
+- name: 'area:landing'
+  color: '1d76db'
+  description: 'Next.js marketing site'
+
+- name: 'area:ai-coach'
+  color: '0052cc'
+  description: 'FastAPI AI coach service'
+
+- name: 'area:supabase'
+  color: '006b75'
+  description: 'Supabase / Postgres'
+
+- name: 'area:brand'
+  color: 'e99695'
+  description: 'Brand assets'
+
+- name: 'area:content'
+  color: 'f9d0c4'
+  description: 'Content / copy / training'
+
+- name: 'area:docs'
+  color: 'd4c5f9'
+  description: 'Documentation'
+
+- name: 'status:wip'
+  color: 'fbca04'
+  description: 'Work in progress'
+
+- name: 'status:blocked'
+  color: 'b60205'
+  description: 'Blocked by external dependency'
+
+- name: 'status:needs-review'
+  color: '0e8a16'
+  description: 'Ready for review'
+
+- name: 'good-first-issue'
+  color: '7057ff'
+  description: 'Good for newcomers'
+
+- name: 'help-wanted'
+  color: '008672'
+  description: 'Extra attention is needed'
+
+- name: 'dependencies'
+  color: '0366d6'
+  description: 'Dependency updates'
+
+- name: 'github-actions'
+  color: '000000'
+  description: 'GitHub Actions workflows'
+
+- name: 'docker'
+  color: '0db7ed'
+  description: 'Docker / container related'
+
+- name: 'skip-changelog'
+  color: 'ededed'
+  description: 'Skip CHANGELOG check'

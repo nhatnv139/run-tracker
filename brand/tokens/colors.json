@@ -1,0 +1,160 @@
+{
+  "$schema": "runvie-design-tokens-v1",
+  "name": "RunVie Aurora Energy",
+  "description": "Color tokens for the RunVie brand. Primitive scales feed semantic aliases; never reference primitives directly in product code.",
+  "primitive": {
+    "coral": {
+      "50":  "#FFF1ED",
+      "100": "#FFDDD2",
+      "150": "#FFC8B6",
+      "200": "#FFB39A",
+      "250": "#FF9E7E",
+      "300": "#FF8962",
+      "350": "#FF7A4A",
+      "400": "#FF6A3E",
+      "450": "#FF5A36",
+      "500": "#FF5A36",
+      "550": "#EE4A28",
+      "600": "#DC3F1F",
+      "650": "#C73717",
+      "700": "#A92E12",
+      "750": "#8C260F",
+      "800": "#6E1D0B",
+      "850": "#511507",
+      "900": "#330D04"
+    },
+    "mint": {
+      "50":  "#E6FBF5",
+      "100": "#C2F5E6",
+      "150": "#9FEFD7",
+      "200": "#7BE9C8",
+      "250": "#58E3B9",
+      "300": "#34DDAA",
+      "350": "#1AD9A0",
+      "400": "#00D4A8",
+      "450": "#00C49B",
+      "500": "#00D4A8",
+      "550": "#00B58F",
+      "600": "#00A582",
+      "650": "#008A6C",
+      "700": "#006F57",
+      "750": "#005A47",
+      "800": "#004637",
+      "850": "#003127",
+      "900": "#001D17"
+    },
+    "lavender": {
+      "50":  "#F1EDFF",
+      "100": "#DDD2FF",
+      "150": "#C9B6FF",
+      "200": "#B59AFF",
+      "250": "#A17EFF",
+      "300": "#8D62FF",
+      "350": "#8160FF",
+      "400": "#7B5CFF",
+      "450": "#6E4DF5",
+      "500": "#7B5CFF",
+      "550": "#5F3FE0",
+      "600": "#4F33BD",
+      "650": "#4129A0",
+      "700": "#332180",
+      "750": "#291A66",
+      "800": "#1F134D",
+      "850": "#150D33",
+      "900": "#0B061A"
+    },
+    "neutral": {
+      "0":   "#FFFFFF",
+      "50":  "#FAFAF7",
+      "100": "#F2F2EE",
+      "150": "#E8E8E3",
+      "200": "#D9D9D2",
+      "250": "#C2C2BB",
+      "300": "#A8A8A2",
+      "400": "#8A8A84",
+      "500": "#6B6B73",
+      "600": "#52525A",
+      "700": "#3A3A40",
+      "800": "#26262B",
+      "850": "#1A1A1F",
+      "900": "#0F0F12",
+      "950": "#0A0A0A"
+    },
+    "zone": {
+      "z1": "#4ADE80",
+      "z2": "#FACC15",
+      "z3": "#FB923C",
+      "z4": "#EF4444",
+      "z5": "#B91C1C"
+    }
+  },
+  "semantic": {
+    "brand": {
+      "primary":   "{primitive.coral.500}",
+      "secondary": "{primitive.mint.500}",
+      "tertiary":  "{primitive.lavender.500}",
+      "gradientStart":  "#FF5A36",
+      "gradientMiddle": "#7B5CFF",
+      "gradientEnd":    "#00D4A8"
+    },
+    "accent": {
+      "energy":   "{primitive.coral.500}",
+      "recovery": "{primitive.mint.500}",
+      "focus":    "{primitive.lavender.500}"
+    },
+    "feedback": {
+      "success": "{primitive.mint.500}",
+      "warning": "{primitive.zone.z2}",
+      "danger":  "{primitive.zone.z4}",
+      "info":    "{primitive.lavender.500}"
+    },
+    "hrZone": {
+      "z1": { "value": "{primitive.zone.z1}", "label": "Recovery" },
+      "z2": { "value": "{primitive.zone.z2}", "label": "Aerobic" },
+      "z3": { "value": "{primitive.zone.z3}", "label": "Tempo" },
+      "z4": { "value": "{primitive.zone.z4}", "label": "Threshold" },
+      "z5": { "value": "{primitive.zone.z5}", "label": "Max" }
+    },
+    "bg": {
+      "canvas":      "{primitive.neutral.50}",
+      "surface":     "{primitive.neutral.0}",
+      "elevated":    "{primitive.neutral.0}",
+      "muted":       "{primitive.neutral.100}",
+      "inverse":     "{primitive.neutral.850}",
+      "inverseDeep": "{primitive.neutral.950}"
+    },
+    "text": {
+      "primary":   "{primitive.neutral.850}",
+      "secondary": "{primitive.neutral.500}",
+      "muted":     "{primitive.neutral.400}",
+      "inverse":   "{primitive.neutral.0}",
+      "onBrand":   "{primitive.neutral.0}",
+      "link":      "{primitive.coral.500}"
+    },
+    "border": {
+      "subtle":   "{primitive.neutral.150}",
+      "default":  "{primitive.neutral.200}",
+      "strong":   "{primitive.neutral.300}",
+      "focus":    "{primitive.coral.500}",
+      "inverse":  "{primitive.neutral.700}"
+    }
+  },
+  "darkMode": {
+    "bg": {
+      "canvas":   "{primitive.neutral.950}",
+      "surface":  "{primitive.neutral.850}",
+      "elevated": "{primitive.neutral.800}",
+      "muted":    "{primitive.neutral.700}"
+    },
+    "text": {
+      "primary":   "{primitive.neutral.50}",
+      "secondary": "{primitive.neutral.300}",
+      "muted":     "{primitive.neutral.400}"
+    },
+    "border": {
+      "subtle":  "{primitive.neutral.800}",
+      "default": "{primitive.neutral.700}",
+      "strong":  "{primitive.neutral.600}"
+    }
+  }
+}

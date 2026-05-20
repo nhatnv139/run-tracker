@@ -1,0 +1,97 @@
+{
+  "$schema": "runvie-design-tokens-v1",
+  "fontFamilies": {
+    "sans":    "'Be Vietnam Pro', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+    "display": "'Be Vietnam Pro', 'Inter', system-ui, sans-serif",
+    "mono":    "'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace"
+  },
+  "fontWeights": {
+    "regular":  400,
+    "medium":   500,
+    "semibold": 600,
+    "bold":     700,
+    "extrabold": 800
+  },
+  "scale": {
+    "displayXL": {
+      "fontFamily":    "{fontFamilies.display}",
+      "fontWeight":    800,
+      "fontSize":      "64px",
+      "lineHeight":    "68px",
+      "letterSpacing": "-2px",
+      "usage":         "Hero headlines on landing / onboarding."
+    },
+    "displayL": {
+      "fontFamily":    "{fontFamilies.display}",
+      "fontWeight":    800,
+      "fontSize":      "48px",
+      "lineHeight":    "54px",
+      "letterSpacing": "-1.5px",
+      "usage":         "Big stat displays, weekly distance."
+    },
+    "headingL": {
+      "fontFamily":    "{fontFamilies.sans}",
+      "fontWeight":    700,
+      "fontSize":      "32px",
+      "lineHeight":    "40px",
+      "letterSpacing": "-0.8px",
+      "usage":         "Screen titles."
+    },
+    "headingM": {
+      "fontFamily":    "{fontFamilies.sans}",
+      "fontWeight":    700,
+      "fontSize":      "24px",
+      "lineHeight":    "32px",
+      "letterSpacing": "-0.4px",
+      "usage":         "Section headers, card titles."
+    },
+    "headingS": {
+      "fontFamily":    "{fontFamilies.sans}",
+      "fontWeight":    600,
+      "fontSize":      "20px",
+      "lineHeight":    "28px",
+      "letterSpacing": "-0.2px",
+      "usage":         "Subsections, list group titles."
+    },
+    "bodyL": {
+      "fontFamily":    "{fontFamilies.sans}",
+      "fontWeight":    400,
+      "fontSize":      "18px",
+      "lineHeight":    "28px",
+      "letterSpacing": "0px",
+      "usage":         "Primary paragraph copy, motivational body."
+    },
+    "bodyM": {
+      "fontFamily":    "{fontFamilies.sans}",
+      "fontWeight":    400,
+      "fontSize":      "16px",
+      "lineHeight":    "24px",
+      "letterSpacing": "0px",
+      "usage":         "Default UI body, form labels."
+    },
+    "bodyS": {
+      "fontFamily":    "{fontFamilies.sans}",
+      "fontWeight":    400,
+      "fontSize":      "14px",
+      "lineHeight":    "20px",
+      "letterSpacing": "0.1px",
+      "usage":         "Secondary UI text, helper copy."
+    },
+    "caption": {
+      "fontFamily":    "{fontFamilies.sans}",
+      "fontWeight":    500,
+      "fontSize":      "12px",
+      "lineHeight":    "16px",
+      "letterSpacing": "0.4px",
+      "usage":         "Tags, badges, timestamps, micro-labels."
+    },
+    "mono": {
+      "fontFamily":    "{fontFamilies.mono}",
+      "fontWeight":    500,
+      "fontSize":      "14px",
+      "lineHeight":    "20px",
+      "letterSpacing": "0px",
+      "usage":         "Pace, time-of-day, numerical splits."
+    }
+  }
+}

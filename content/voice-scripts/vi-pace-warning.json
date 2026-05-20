@@ -1,0 +1,59 @@
+[
+  {
+    "id": "pace_too_fast",
+    "trigger": "pace_above_target_10pct",
+    "category": "pace_warning",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Bạn đang chạy nhanh hơn mục tiêu. Pace {pace}, mục tiêu {target_pace}. Giảm nhẹ nhé.",
+      "Pace hơi nhanh, {pace} so với {target_pace}. Hít sâu, chậm lại chút.",
+      "Đang vượt pace mục tiêu. Giữ sức cho đoạn sau.",
+      "Pace {pace} - hơi gấp. Mục tiêu {target_pace}.",
+      "Bạn đẩy hơi mạnh đầu rồi. Giảm nhịp lại chút.",
+      "Nhanh hơn kế hoạch. Đừng đốt năng lượng quá sớm.",
+      "Pace cao hơn 10 phần trăm. Lùi về {target_pace} đi.",
+      "Hơi vội. Pace {pace}, mục tiêu chỉ cần {target_pace}.",
+      "Bạn đang nhanh quá. Hít thở mũi cho đều.",
+      "Pace vượt mức. Cuộc chạy còn dài, giữ sức nhé."
+    ]
+  },
+  {
+    "id": "pace_too_slow",
+    "trigger": "pace_below_target_10pct",
+    "category": "pace_warning",
+    "style": "drill",
+    "lang": "vi-VN",
+    "templates": [
+      "Pace đang chậm. {pace} so với mục tiêu {target_pace}. Tăng nhịp lên.",
+      "Đang tụt pace. Đẩy lên, bạn làm được.",
+      "Pace {pace} - chậm hơn 10 phần trăm. Bước dài hơn.",
+      "Tăng tốc nào. Mục tiêu {target_pace}.",
+      "Bạn đang xuống pace. Nhịp chân nhanh hơn.",
+      "Pace chậm. Đẩy nhịp tim lên zone 3.",
+      "Cố gắng chút nữa, pace đang dưới target.",
+      "Tăng tốc. Mỗi giây giảm là kết quả tốt hơn.",
+      "Pace tụt rồi. Bám sát {target_pace}.",
+      "Đừng để pace trượt. Đẩy chân lên."
+    ]
+  },
+  {
+    "id": "pace_on_target",
+    "trigger": "pace_within_target",
+    "category": "pace_feedback",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Pace đẹp lắm, đúng mục tiêu.",
+      "Bạn đang bám pace rất chuẩn.",
+      "Pace ổn định {pace}. Tiếp tục.",
+      "Giữ nguyên nhịp này, hoàn hảo.",
+      "Pace đúng kế hoạch. Bạn kiểm soát tốt.",
+      "Đều tay quá. Pace {pace} chuẩn.",
+      "Bám pace như đồng hồ. Tốt lắm.",
+      "Bạn đang chạy như một máy đếm bước.",
+      "Pace mượt mà. Cứ giữ vậy.",
+      "Nhịp này hoàn hảo cho mục tiêu hôm nay."
+    ]
+  }
+]

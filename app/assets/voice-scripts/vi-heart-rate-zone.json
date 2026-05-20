@@ -1,0 +1,71 @@
+[
+  {
+    "id": "hr_zone_4_enter",
+    "trigger": "hr_zone_4_entered",
+    "category": "heart_rate",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Nhịp tim vào Zone 4. Bạn đang đẩy mạnh.",
+      "Zone 4. Pace nhanh, hít thở sâu giúp ổn định.",
+      "Tim đập nhanh, vào ngưỡng tempo.",
+      "Zone 4 rồi. Giữ đều, đừng đẩy thêm nếu không cần.",
+      "Vào ngưỡng cao. Cơ thể đang đốt nhiều calo.",
+      "Nhịp tim cao. Nếu đây là interval thì tốt."
+    ]
+  },
+  {
+    "id": "hr_zone_4_exit",
+    "trigger": "hr_zone_4_exited_down",
+    "category": "heart_rate",
+    "style": "neutral",
+    "lang": "vi-VN",
+    "templates": [
+      "Đã ra khỏi Zone 4. Nhịp tim giảm.",
+      "Tim đập chậm lại. Tốt.",
+      "Trở về Zone 3. Phục hồi đang diễn ra.",
+      "Nhịp tim ổn định lại."
+    ]
+  },
+  {
+    "id": "hr_zone_5_enter",
+    "trigger": "hr_zone_5_entered",
+    "category": "heart_rate",
+    "style": "drill",
+    "lang": "vi-VN",
+    "templates": [
+      "Zone 5! Nhịp tim đỉnh điểm.",
+      "Tim đập nhanh, ngưỡng VO2 max.",
+      "Zone 5 - chỉ nên giữ ngắn thôi.",
+      "Vào vùng đỏ. Giữ tối đa 2-3 phút.",
+      "Zone 5 - cảm nhận sức mạnh."
+    ]
+  },
+  {
+    "id": "hr_zone_5_warning",
+    "trigger": "hr_zone_5_sustained",
+    "category": "heart_rate",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Bạn ở Zone 5 quá lâu. Giảm tốc một chút.",
+      "Nhịp tim cao kéo dài. Hít sâu, chậm lại.",
+      "Quá ngưỡng an toàn. Đi bộ một đoạn cho hạ.",
+      "Cẩn thận với Zone 5 lâu. Lùi về Zone 4.",
+      "Tim đập quá nhanh quá lâu. Bạn cần giảm pace."
+    ]
+  },
+  {
+    "id": "hr_zone_2_easy",
+    "trigger": "hr_zone_2_steady",
+    "category": "heart_rate",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Zone 2 chuẩn. Đây là vùng đốt mỡ tối ưu.",
+      "Nhịp tim đẹp cho buổi easy.",
+      "Zone 2 - bạn có thể chạy lâu ở đây.",
+      "Đốt mỡ hiệu quả. Giữ nguyên."
+    ]
+  }
+]

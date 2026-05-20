@@ -1,0 +1,78 @@
+[
+  {
+    "id": "streak_3",
+    "trigger": "streak_3_days",
+    "category": "streak",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "3 ngày liên tiếp. Thói quen đang hình thành.",
+      "Chuỗi 3 ngày. Khởi đầu đẹp.",
+      "Ba ngày liên tục - bạn đang nghiêm túc với mình."
+    ]
+  },
+  {
+    "id": "streak_7",
+    "trigger": "streak_7_days",
+    "category": "streak",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Một tuần liên tiếp. Tuyệt vời.",
+      "Chuỗi 7 ngày! Bạn đã vượt qua tuần đầu khó nhất.",
+      "Bảy ngày không nghỉ. Cơ thể cảm ơn bạn.",
+      "Tuần đầu tròn trĩnh. Đây là nền móng."
+    ]
+  },
+  {
+    "id": "streak_30",
+    "trigger": "streak_30_days",
+    "category": "streak",
+    "style": "drill",
+    "lang": "vi-VN",
+    "templates": [
+      "30 ngày liên tục! Bạn đã trở thành runner thực thụ.",
+      "Một tháng không gián đoạn. Đáng nể.",
+      "Chuỗi 30 ngày! Bạn đang ở top những người kiên trì.",
+      "30 ngày. Ý chí của bạn là gương cho cộng đồng."
+    ]
+  },
+  {
+    "id": "streak_100",
+    "trigger": "streak_100_days",
+    "category": "streak",
+    "style": "drill",
+    "lang": "vi-VN",
+    "templates": [
+      "100 ngày liên tiếp! Bạn đã làm nên lịch sử của riêng mình.",
+      "Một trăm ngày không nghỉ. Bạn là ngọn hải đăng.",
+      "Streak 100. Bạn xứng đáng huy chương vàng.",
+      "100 ngày - thói quen đã trở thành bản năng."
+    ]
+  },
+  {
+    "id": "streak_365",
+    "trigger": "streak_365_days",
+    "category": "streak",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Một năm không gián đoạn. Bạn đã thay đổi cuộc đời mình.",
+      "365 ngày. Bạn không còn là người cũ nữa.",
+      "Một năm tròn. Hành trình này thật đẹp."
+    ]
+  },
+  {
+    "id": "streak_lost",
+    "trigger": "streak_broken",
+    "category": "streak",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Streak vừa kết thúc. Không sao, bắt đầu lại thôi.",
+      "Chuỗi đã đứt. Hôm nay là ngày 1 của một chuỗi mới.",
+      "Nghỉ rồi không sao. Quan trọng là bạn quay lại.",
+      "Streak reset. Cuộc đua không bao giờ kết thúc vĩnh viễn."
+    ]
+  }
+]

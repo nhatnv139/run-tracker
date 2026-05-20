@@ -1,0 +1,15 @@
+{
+  "name": "runvie-load",
+  "version": "0.1.0",
+  "private": true,
+  "description": "k6 load scenarios for RunVie",
+  "scripts": {
+    "load:chat": "k6 run ai_chat_load.js",
+    "load:sync": "k6 run sync_activity_load.js",
+    "load:leaderboard": "k6 run leaderboard_load.js",
+    "load:all": "k6 run ai_chat_load.js && k6 run sync_activity_load.js && k6 run leaderboard_load.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

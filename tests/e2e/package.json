@@ -1,0 +1,20 @@
+{
+  "name": "runvie-e2e",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cross-system Playwright + Python E2E tests for RunVie",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "install:browsers": "playwright install --with-deps chromium",
+    "py:journey": "python full_user_journey.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

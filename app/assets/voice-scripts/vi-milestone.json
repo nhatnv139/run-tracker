@@ -1,0 +1,78 @@
+[
+  {
+    "id": "milestone_km_neutral",
+    "trigger": "every_km",
+    "category": "milestone",
+    "style": "neutral",
+    "lang": "vi-VN",
+    "templates": [
+      "Hoàn thành {km} km. Pace hiện tại {pace}.",
+      "{km} km xong. Bạn đang chạy {pace} một cây số.",
+      "Đã chạy {km} km. Nhịp tim {hr}, pace {pace}.",
+      "Vượt mốc {km} km. Pace trung bình {pace}.",
+      "Cây số thứ {km} hoàn thành. Pace {pace}.",
+      "Bạn đã đi được {km} km. Pace {pace}, giữ ổn định nhé.",
+      "{km} km. Pace {pace}. Tiếp tục.",
+      "Qua {km} km rồi. Pace hiện tại {pace}.",
+      "Mốc {km} km đã qua. Pace {pace}.",
+      "Chạy được {km} km. Pace {pace} mỗi km."
+    ]
+  },
+  {
+    "id": "milestone_km_gentle",
+    "trigger": "every_km",
+    "category": "milestone",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Bạn vừa hoàn thành {km} km. Tuyệt vời.",
+      "{km} km rồi. Bạn đang làm rất tốt.",
+      "Cây số thứ {km}. Hít thở sâu, bạn nhé.",
+      "Đã chạy {km} km. Cứ thoải mái, không vội.",
+      "{km} km. Bạn vững vàng lắm.",
+      "Qua mốc {km}. Bạn xứng đáng tự hào.",
+      "{km} km. Mỗi bước đều có ý nghĩa.",
+      "Hoàn thành {km} km. Cảm ơn bạn đã kiên trì.",
+      "Bạn đã đi được {km} km. Chậm rãi và đều đặn.",
+      "{km} km xong. Bạn đang chăm sóc bản thân thật tốt."
+    ]
+  },
+  {
+    "id": "milestone_km_drill",
+    "trigger": "every_km",
+    "category": "milestone",
+    "style": "drill",
+    "lang": "vi-VN",
+    "templates": [
+      "{km} km xong. Đẩy lên tiếp.",
+      "Đã qua {km} km. Không dừng lại.",
+      "Cây số {km}. Bám sát pace.",
+      "{km} km xuống. Còn nhiều km nữa, lên.",
+      "Mốc {km} đã thuộc về bạn. Tiến tới.",
+      "{km} km. Giữ vững nhịp, đẩy nhanh hơn.",
+      "Qua {km} km. Cơ thể đang mạnh lên.",
+      "{km} km! Tăng tốc nào.",
+      "Bạn đã hạ gục cây số {km}. Hạ tiếp cây thứ {km_plus_one}.",
+      "{km} km hoàn thành. Đừng để cơ thể nghỉ."
+    ]
+  },
+  {
+    "id": "milestone_km_funny",
+    "trigger": "every_km",
+    "category": "milestone",
+    "style": "funny",
+    "lang": "vi-VN",
+    "templates": [
+      "{km} km xong. Phở chiều đang chờ đấy.",
+      "Mốc {km} km. Cây số này khó hơn vợ đòi mua váy.",
+      "{km} km. Anh giao Grab khen bạn ngầu.",
+      "Hết {km} km. Đôi giày bắt đầu kêu cứu.",
+      "Cây số {km}. Vỉa hè Sài Gòn đang nhìn bạn ngưỡng mộ.",
+      "{km} km. Đường còn dài như series Hàn Quốc.",
+      "Qua {km} km. Cốc cà phê sáng nay đang phát huy tác dụng.",
+      "{km} km xong. Cô bán bánh mì đầu hẻm phải xếp hàng chờ bạn.",
+      "Mốc {km}. Bạn nhanh hơn xe máy giờ kẹt xe rồi.",
+      "{km} km. Calo đang khóc thét."
+    ]
+  }
+]

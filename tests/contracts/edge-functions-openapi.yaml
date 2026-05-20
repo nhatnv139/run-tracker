@@ -1,0 +1,220 @@
+openapi: 3.1.0
+info:
+  title: RunVie Supabase Edge Functions
+  version: 0.1.0
+servers:
+  - url: https://{project}.functions.supabase.co
+    variables:
+      project:
+        default: runvie-prod
+security:
+  - bearerAuth: []
+  - supabaseApiKey: []
+paths:
+  /sync-activity:
+    post:
+      summary: Ingest a finished activity
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Activity"
+      responses:
+        "200":
+          description: Inserted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ActivityInsertResult"
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "422": { $ref: "#/components/responses/Validation" }
+  /award-badges:
+    post:
+      summary: Evaluate badges for the calling user
+      responses:
+        "200":
+          description: List of newly awarded badges
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AwardedBadges"
+  /leaderboard:
+    get:
+      summary: Read the leaderboard
+      parameters:
+        - in: query
+          name: scope
+          required: true
+          schema:
+            type: string
+            enum: [weekly, monthly, all_time]
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 1, maximum: 100, default: 50 }
+      responses:
+        "200":
+          description: Entries
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Leaderboard"
+  /redeem-coin:
+    post:
+      summary: Redeem coins for a partner voucher
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [product, cost_coins]
+              properties:
+                product: { type: string }
+                cost_coins: { type: integer, minimum: 1 }
+      responses:
+        "200":
+          description: Voucher issued
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Voucher"
+        "402":
+          description: Insufficient balance
+  /delete-account:
+    post:
+      summary: Permanently delete the caller's account and data
+      responses:
+        "204":
+          description: Account deleted
+  /recalc-streak:
+    post:
+      summary: Recalculate the user's daily streak
+      responses:
+        "200":
+          description: Updated streak
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Streak"
+  /send-push:
+    post:
+      summary: Send a push notification (service role only)
+      security:
+        - supabaseApiKey: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [user_id, title, body]
+              properties:
+                user_id: { type: string, format: uuid }
+                title: { type: string }
+                body: { type: string }
+                data:
+                  type: object
+                  additionalProperties: true
+      responses:
+        "202":
+          description: Queued
+  /weekly-recap:
+    post:
+      summary: Generate the weekly recap for the calling user
+      responses:
+        "200":
+          description: Recap payload
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    supabaseApiKey:
+      type: apiKey
+      in: header
+      name: apikey
+  responses:
+    Unauthorized:
+      description: Missing or invalid JWT
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Validation:
+      description: Validation error
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+  schemas:
+    Activity:
+      type: object
+      required: [distance_km, duration_s, started_at]
+      properties:
+        distance_km: { type: number, minimum: 0 }
+        duration_s: { type: integer, minimum: 0 }
+        started_at: { type: string, format: date-time }
+        polyline: { type: string }
+        avg_pace_s_per_km: { type: number }
+    ActivityInsertResult:
+      type: object
+      required: [activity_id]
+      properties:
+        activity_id: { type: string, format: uuid }
+        badges_awarded:
+          type: array
+          items: { type: string }
+        coins_earned: { type: integer, minimum: 0 }
+    AwardedBadges:
+      type: object
+      required: [badges]
+      properties:
+        badges:
+          type: array
+          items:
+            type: object
+            required: [code]
+            properties:
+              code: { type: string }
+              awarded_at: { type: string, format: date-time }
+    Leaderboard:
+      type: object
+      required: [scope, entries]
+      properties:
+        scope: { type: string }
+        entries:
+          type: array
+          items:
+            type: object
+            required: [user_id, display_name, distance_km, rank]
+            properties:
+              user_id: { type: string, format: uuid }
+              display_name: { type: string }
+              distance_km: { type: number }
+              rank: { type: integer, minimum: 1 }
+    Voucher:
+      type: object
+      required: [voucher_code, partner]
+      properties:
+        voucher_code: { type: string }
+        partner: { type: string }
+        expires_at: { type: string, format: date-time }
+    Streak:
+      type: object
+      required: [current_days]
+      properties:
+        current_days: { type: integer, minimum: 0 }
+        longest_days: { type: integer, minimum: 0 }
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error: { type: string }
+        message: { type: string }

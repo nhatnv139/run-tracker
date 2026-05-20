@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+  --color-coral: #FF5A36;
+  --color-coral-soft: #FF7A5C;
+  --color-mint: #00D4A8;
+  --color-mint-soft: #3DE0BC;
+  --color-lavender: #7B5CFF;
+  --color-lavender-soft: #9A82FF;
+  --color-bg-light: #FAFAF7;
+  --color-bg-dark: #0A0A0A;
+  --color-ink: #0A0A0A;
+  --color-ink-soft: #1F1F1F;
+
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.75rem;
+
+  --animate-pulse-slow: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+  }
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+}
+
+:root {
+  --background: #FAFAF7;
+  --foreground: #0A0A0A;
+  --card: #FFFFFF;
+  --card-foreground: #0A0A0A;
+  --border: rgba(10, 10, 10, 0.08);
+  --muted: rgba(10, 10, 10, 0.55);
+  --muted-bg: rgba(10, 10, 10, 0.04);
+}
+
+.dark {
+  --background: #0A0A0A;
+  --foreground: #FAFAF7;
+  --card: #141414;
+  --card-foreground: #FAFAF7;
+  --border: rgba(250, 250, 247, 0.1);
+  --muted: rgba(250, 250, 247, 0.6);
+  --muted-bg: rgba(250, 250, 247, 0.05);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  ::selection {
+    background: var(--color-coral);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-aurora {
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 30%, rgba(255, 90, 54, 0.25), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 80% 20%, rgba(0, 212, 168, 0.22), transparent 60%),
+      radial-gradient(ellipse 70% 60% at 60% 80%, rgba(123, 92, 255, 0.22), transparent 60%);
+  }
+
+  .bg-aurora-strong {
+    background:
+      radial-gradient(ellipse 60% 50% at 20% 30%, rgba(255, 90, 54, 0.55), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 80% 20%, rgba(0, 212, 168, 0.5), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 60% 80%, rgba(123, 92, 255, 0.5), transparent 60%);
+  }
+
+  .text-gradient-aurora {
+    background: linear-gradient(110deg, #FF5A36 0%, #FF7A5C 25%, #7B5CFF 60%, #00D4A8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .card-surface {
+    background: var(--card);
+    color: var(--card-foreground);
+    border: 1px solid var(--border);
+  }
+
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.6'/></svg>");
+  }
+}

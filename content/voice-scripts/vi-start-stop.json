@@ -1,0 +1,100 @@
+[
+  {
+    "id": "workout_start_gentle",
+    "trigger": "workout_start",
+    "category": "session_control",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Buổi chạy bắt đầu. Chúc bạn có một buổi đẹp.",
+      "GPS đã kết nối. Khởi động nhẹ trước nhé.",
+      "Sẵn sàng rồi. Hít một hơi sâu, bắt đầu thôi.",
+      "Chào buổi chạy. Cảm ơn bạn đã dậy hôm nay.",
+      "Bắt đầu nào. Hít vào, thở ra, đi."
+    ]
+  },
+  {
+    "id": "workout_start_drill",
+    "trigger": "workout_start",
+    "category": "session_control",
+    "style": "drill",
+    "lang": "vi-VN",
+    "templates": [
+      "Bắt đầu! Đầu tiên là 5 phút khởi động.",
+      "Bắt đầu chạy. Bám sát kế hoạch.",
+      "Khởi động xong, vào pace ngay.",
+      "Lên đường. Hôm nay là một buổi đáng nhớ.",
+      "Bắt đầu! Tâm trí tập trung, chân vững."
+    ]
+  },
+  {
+    "id": "workout_pause",
+    "trigger": "workout_pause",
+    "category": "session_control",
+    "style": "neutral",
+    "lang": "vi-VN",
+    "templates": [
+      "Đã tạm dừng. Nghỉ ngắn rồi quay lại nhé.",
+      "Tạm dừng buổi chạy. Khi sẵn sàng nhấn tiếp.",
+      "Đồng hồ dừng. Hít thở, uống ngụm nước.",
+      "Tạm nghỉ. Bạn vẫn đang trong buổi tập.",
+      "Pause. Nhịp tim sẽ giảm dần."
+    ]
+  },
+  {
+    "id": "workout_resume",
+    "trigger": "workout_resume",
+    "category": "session_control",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Tiếp tục thôi. Khởi động nhẹ trước.",
+      "Quay lại buổi chạy. Bạn vẫn còn sức.",
+      "Đi tiếp. Pace bắt đầu lại từ con số mới.",
+      "Đồng hồ chạy lại. Bám pace mục tiêu.",
+      "Tiếp tục. Cơ thể đã nghỉ đủ rồi."
+    ]
+  },
+  {
+    "id": "workout_complete_gentle",
+    "trigger": "workout_finish",
+    "category": "session_control",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Hoàn thành buổi chạy. Bạn tuyệt vời.",
+      "Về đích. Hôm nay là một ngày tốt.",
+      "Đã xong. Đi bộ chậm 5 phút để hạ nhiệt nhé.",
+      "Chúc mừng bạn hoàn thành. Tổng cộng {distance} km, thời gian {duration}.",
+      "Buổi chạy kết thúc. Cảm ơn cơ thể bạn đã làm việc tốt.",
+      "Hoàn thành. {distance} km, pace trung bình {pace}. Đẹp lắm."
+    ]
+  },
+  {
+    "id": "workout_complete_drill",
+    "trigger": "workout_finish",
+    "category": "session_control",
+    "style": "drill",
+    "lang": "vi-VN",
+    "templates": [
+      "Đã hoàn thành. {distance} km - không tệ.",
+      "Về đích! Pace trung bình {pace}.",
+      "Xong rồi! Cơ bắp ngày càng mạnh.",
+      "Buổi này: {distance} km trong {duration}. Tốt.",
+      "Hoàn thành mục tiêu hôm nay. Mai lại nhé."
+    ]
+  },
+  {
+    "id": "workout_complete_funny",
+    "trigger": "workout_finish",
+    "category": "session_control",
+    "style": "funny",
+    "lang": "vi-VN",
+    "templates": [
+      "Xong! Giờ thì ăn bún bò không tội lỗi.",
+      "Hoàn thành {distance} km. Cốc trà sữa size lớn xứng đáng.",
+      "Về đích. Đôi giày bạn đáng được nghỉ ngơi.",
+      "{distance} km xong. Sô-cô-la giờ là phần thưởng."
+    ]
+  }
+]

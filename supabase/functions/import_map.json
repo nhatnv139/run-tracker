@@ -1,0 +1,17 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.224.0/",
+    "std/http/server.ts": "https://deno.land/std@0.224.0/http/server.ts",
+    "std/testing/asserts.ts": "https://deno.land/std@0.224.0/assert/mod.ts",
+    "std/testing/bdd.ts": "https://deno.land/std@0.224.0/testing/bdd.ts",
+    "supabase": "https://esm.sh/@supabase/supabase-js@2.45.0",
+    "zod": "https://esm.sh/zod@3.23.8",
+    "djwt": "https://deno.land/x/djwt@v3.0.2/mod.ts",
+    "@shared/cors": "./_shared/cors.ts",
+    "@shared/auth": "./_shared/auth.ts",
+    "@shared/supabase-client": "./_shared/supabase-client.ts",
+    "@shared/errors": "./_shared/errors.ts",
+    "@shared/validation": "./_shared/validation.ts",
+    "@shared/json": "./_shared/json.ts"
+  }
+}

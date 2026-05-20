@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#1F1F1F"/>
+    </linearGradient>
+    <radialGradient id="r1" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FF5A36" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FF5A36" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r2" cx="80%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#00D4A8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00D4A8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r3" cx="60%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#7B5CFF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7B5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF5A36"/>
+      <stop offset="50%" stop-color="#7B5CFF"/>
+      <stop offset="100%" stop-color="#00D4A8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#r1)"/>
+  <rect width="1200" height="630" fill="url(#r2)"/>
+  <rect width="1200" height="630" fill="url(#r3)"/>
+
+  <g transform="translate(80, 120)">
+    <rect width="80" height="80" rx="20" fill="url(#text)"/>
+    <text x="40" y="60" text-anchor="middle" font-family="-apple-system, system-ui, sans-serif" font-weight="900" font-size="50" fill="#fff">R</text>
+  </g>
+
+  <text x="180" y="180" font-family="-apple-system, system-ui, sans-serif" font-weight="800" font-size="42" fill="#FAFAF7">RunVie</text>
+
+  <text x="80" y="320" font-family="-apple-system, system-ui, sans-serif" font-weight="900" font-size="76" fill="#FAFAF7">App chạy bộ AI</text>
+  <text x="80" y="410" font-family="-apple-system, system-ui, sans-serif" font-weight="900" font-size="76" fill="url(#text)">tiếng Việt</text>
+
+  <text x="80" y="490" font-family="-apple-system, system-ui, sans-serif" font-weight="500" font-size="32" fill="#FAFAF7" opacity="0.85">GPS - Đếm bước - Calo - RunCoin đổi voucher</text>
+
+  <g transform="translate(80, 540)">
+    <rect width="180" height="48" rx="24" fill="#FF5A36"/>
+    <text x="90" y="32" text-anchor="middle" font-family="-apple-system, system-ui, sans-serif" font-weight="700" font-size="18" fill="#fff">Sắp ra mắt 2026</text>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+name: load
+
+on:
+  schedule:
+    # Weekly on Sunday at 03:00 UTC.
+    - cron: "0 3 * * 0"
+  workflow_dispatch:
+    inputs:
+      scenario:
+        description: "Which scenario to run: chat|sync|leaderboard|all"
+        required: false
+        default: "all"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: load-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  ai-chat:
+    name: AI chat load
+    if: ${{ github.event_name == 'schedule' || inputs.scenario == 'all' || inputs.scenario == 'chat' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install k6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Run k6 scenario
+        env:
+          AI_COACH_URL: ${{ secrets.AI_COACH_URL }}
+          LOAD_BEARER_TOKEN: ${{ secrets.LOAD_BEARER_TOKEN }}
+        run: k6 run tests/load/ai_chat_load.js --summary-export=ai_chat_summary.json
+
+      - name: Upload summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai_chat_summary
+          path: ai_chat_summary.json
+
+  sync-activity:
+    name: Sync activity load
+    if: ${{ github.event_name == 'schedule' || inputs.scenario == 'all' || inputs.scenario == 'sync' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install k6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Run k6 scenario
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          LOAD_USER_TOKEN: ${{ secrets.LOAD_USER_TOKEN }}
+        run: k6 run tests/load/sync_activity_load.js --summary-export=sync_summary.json
+
+      - name: Upload summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sync_summary
+          path: sync_summary.json
+
+  leaderboard:
+    name: Leaderboard load
+    if: ${{ github.event_name == 'schedule' || inputs.scenario == 'all' || inputs.scenario == 'leaderboard' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install k6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Run k6 scenario
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: k6 run tests/load/leaderboard_load.js --summary-export=leaderboard_summary.json
+
+      - name: Upload summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: leaderboard_summary
+          path: leaderboard_summary.json

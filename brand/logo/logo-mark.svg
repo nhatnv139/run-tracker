@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="rv-mark-title">
+  <title id="rv-mark-title">RunVie logo mark</title>
+  <defs>
+    <linearGradient id="rv-mark-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF5A36"/>
+      <stop offset="60%" stop-color="#FF7A4A"/>
+      <stop offset="100%" stop-color="#00D4A8"/>
+    </linearGradient>
+    <linearGradient id="rv-mark-wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FAFAF7"/>
+    </linearGradient>
+    <linearGradient id="rv-mark-arrow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D4A8"/>
+      <stop offset="100%" stop-color="#7B5CFF"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <circle cx="128" cy="128" r="112" fill="url(#rv-mark-ring)"/>
+    <circle cx="128" cy="128" r="92" fill="#1A1A1F"/>
+    <path d="M44 148 C 72 116, 100 180, 128 148 S 184 116, 212 148"
+          fill="none"
+          stroke="url(#rv-mark-wave)"
+          stroke-width="14"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          opacity="0.95"/>
+    <path d="M170 96 L210 96 L210 136"
+          fill="none"
+          stroke="url(#rv-mark-arrow)"
+          stroke-width="14"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <path d="M210 96 L150 156"
+          fill="none"
+          stroke="url(#rv-mark-arrow)"
+          stroke-width="14"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </g>
+</svg>

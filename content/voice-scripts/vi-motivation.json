@@ -1,0 +1,116 @@
+[
+  {
+    "id": "motivation_25pct",
+    "trigger": "progress_25pct",
+    "category": "motivation",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Một phần tư chặng đường. Bạn khởi đầu rất tốt.",
+      "Đã đi được 25 phần trăm. Nhịp đẹp đấy.",
+      "Một phần tư xong. Hít thở đều, còn nhiều.",
+      "Bước vào nhịp rồi. Bạn đang làm tốt.",
+      "25 phần trăm. Cơ thể đang nóng dần.",
+      "Một phần tư chặng. Đôi chân ngày càng nhẹ.",
+      "Khởi đầu suôn sẻ. Bạn xứng đáng được khen.",
+      "Mới qua một phần tư mà bạn đã vững rồi.",
+      "Vào nhịp. Hơi thở đều, tâm trí thư giãn.",
+      "Một phần tư đường. Còn ba phần tư niềm vui."
+    ]
+  },
+  {
+    "id": "motivation_50pct",
+    "trigger": "progress_50pct",
+    "category": "motivation",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Nửa đường rồi. Bạn đang đi đúng hướng.",
+      "Một nửa xong. Cơ thể bạn mạnh hơn bạn nghĩ.",
+      "50 phần trăm. Phía sau là quá khứ, phía trước là đích.",
+      "Nửa chặng đường. Bạn đã làm được nửa rồi đó.",
+      "Qua giữa. Mỗi bước từ giờ đều gần đích hơn.",
+      "Một nửa hoàn thành. Hít sâu một hơi, đi tiếp.",
+      "Đến giữa rồi. Bạn đang viết câu chuyện của mình.",
+      "50 phần trăm. Nửa còn lại là phần thưởng cho nửa đầu.",
+      "Bạn đi được một nửa rồi. Tự hào lắm.",
+      "Giữa chặng. Cơ thể đã quen, đầu óc đã rõ."
+    ]
+  },
+  {
+    "id": "motivation_50pct_drill",
+    "trigger": "progress_50pct",
+    "category": "motivation",
+    "style": "drill",
+    "lang": "vi-VN",
+    "templates": [
+      "Nửa đường. Đẩy mạnh, đừng buông.",
+      "50 phần trăm! Đoạn này quyết định kết quả.",
+      "Giữa chặng. Tăng tốc một nấc.",
+      "Một nửa xong. Bám pace tới cùng.",
+      "Qua giữa. Đây là lúc tôi luyện ý chí.",
+      "Nửa đường - đừng để chân chậm lại.",
+      "50 phần trăm. Phần khó nhất bắt đầu.",
+      "Bạn đã nửa đường. Đập tan nửa còn lại.",
+      "Giữa chặng - đẩy nhịp tim lên.",
+      "Một nửa xong - làm nốt nửa kia trong vinh quang."
+    ]
+  },
+  {
+    "id": "motivation_75pct",
+    "trigger": "progress_75pct",
+    "category": "motivation",
+    "style": "drill",
+    "lang": "vi-VN",
+    "templates": [
+      "Ba phần tư rồi. Đẩy nốt một phần tư cuối.",
+      "75 phần trăm. Đích đang gần lắm rồi.",
+      "Ba phần tư xong. Đừng để chân yếu giờ này.",
+      "Một phần tư cuối. Bạn đã bỏ ra quá nhiều để dừng.",
+      "75 phần trăm! Bóp ga cuối nào.",
+      "Còn một phần tư. Mỗi bước đều có giá trị.",
+      "Ba phần tư đường. Cảm nhận đôi chân, nó vẫn còn sức.",
+      "75 phần trăm. Đẩy lên, qua ngưỡng mệt mỏi.",
+      "Một phần tư còn lại - đây là lúc tạo nên buổi chạy đẹp.",
+      "Ba phần tư xong. Đoạn cuối là phần thưởng."
+    ]
+  },
+  {
+    "id": "motivation_75pct_gentle",
+    "trigger": "progress_75pct",
+    "category": "motivation",
+    "style": "gentle",
+    "lang": "vi-VN",
+    "templates": [
+      "Ba phần tư rồi. Bạn đã cố gắng tuyệt vời.",
+      "75 phần trăm. Sắp về tới rồi nhé.",
+      "Một phần tư còn lại. Bạn đang gần đích.",
+      "Ba phần tư xong. Cứ nhẹ nhàng đi tiếp.",
+      "75 phần trăm. Hơi thở vẫn còn đẹp, tốt lắm.",
+      "Còn một phần tư. Cảm nhận từng bước.",
+      "Bạn đã rất giỏi rồi. Còn chút nữa thôi.",
+      "Ba phần tư đường. Đầu óc minh mẫn, chân vững.",
+      "75 phần trăm. Bạn sắp hoàn thành điều mình đặt ra.",
+      "Một phần tư cuối. Hít thở sâu, tận hưởng."
+    ]
+  },
+  {
+    "id": "motivation_mid_funny",
+    "trigger": "progress_50pct",
+    "category": "motivation",
+    "style": "funny",
+    "lang": "vi-VN",
+    "templates": [
+      "Nửa đường rồi. Bún bò sáng đang gọi tên bạn.",
+      "50 phần trăm. Tô phở cuối hành trình ngon hơn gấp đôi.",
+      "Nửa chặng. Cô bán nước mía đang chuẩn bị ly đặc biệt.",
+      "Giữa chặng. Wifi cuối đường mạnh hơn bạn nghĩ.",
+      "Nửa đường. Calo đã chạy mất một nửa rồi.",
+      "50 phần trăm. Mỡ bụng đang khóc thầm.",
+      "Nửa chặng đường - sô-cô-la sau khi về sẽ ngọt hơn.",
+      "Giữa chặng - thử tưởng tượng ly trà sữa cuối ngày.",
+      "Nửa đường. Sống ảo cho story Instagram dễ hơn rồi.",
+      "50 phần trăm. Bạn nhanh hơn ship 30 phút."
+    ]
+  }
+]

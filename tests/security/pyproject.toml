@@ -1,0 +1,14 @@
+[project]
+name = "runvie-security-tests"
+version = "0.1.0"
+description = "Security regression tests (auth, RLS, SQLi, JWT, rate-limit, upload)"
+requires-python = ">=3.11"
+dependencies = [
+    "pytest>=8.0",
+    "requests>=2.32",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["*_test.py"]
+addopts = "-ra -q"

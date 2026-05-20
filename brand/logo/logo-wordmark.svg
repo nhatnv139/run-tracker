@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="640" height="160" role="img" aria-labelledby="rv-wordmark-title">
+  <title id="rv-wordmark-title">RunVie wordmark logo</title>
+  <defs>
+    <linearGradient id="rv-wm-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF5A36"/>
+      <stop offset="60%" stop-color="#FF7A4A"/>
+      <stop offset="100%" stop-color="#00D4A8"/>
+    </linearGradient>
+    <linearGradient id="rv-wm-wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FAFAF7"/>
+    </linearGradient>
+    <linearGradient id="rv-wm-arrow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D4A8"/>
+      <stop offset="100%" stop-color="#7B5CFF"/>
+    </linearGradient>
+    <linearGradient id="rv-wm-text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF5A36"/>
+      <stop offset="55%" stop-color="#7B5CFF"/>
+      <stop offset="100%" stop-color="#00D4A8"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(20 20)">
+    <circle cx="60" cy="60" r="60" fill="url(#rv-wm-ring)"/>
+    <circle cx="60" cy="60" r="49" fill="#1A1A1F"/>
+    <path d="M15 70 C 30 53, 45 87, 60 70 S 90 53, 105 70"
+          fill="none"
+          stroke="url(#rv-wm-wave)"
+          stroke-width="7.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <path d="M82 42 L104 42 L104 64"
+          fill="none"
+          stroke="url(#rv-wm-arrow)"
+          stroke-width="7.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <path d="M104 42 L72 74"
+          fill="none"
+          stroke="url(#rv-wm-arrow)"
+          stroke-width="7.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </g>
+  <text x="165"
+        y="108"
+        font-family="'Be Vietnam Pro', system-ui, sans-serif"
+        font-weight="800"
+        font-size="92"
+        letter-spacing="-3"
+        fill="url(#rv-wm-text)">RunVie</text>
+</svg>

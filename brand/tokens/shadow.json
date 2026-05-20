@@ -1,0 +1,27 @@
+{
+  "$schema": "runvie-design-tokens-v1",
+  "description": "Elevation scale. Shadows use a warm-neutral tint to harmonize with the Aurora palette rather than pure black.",
+  "scale": {
+    "none": "none",
+    "sm": {
+      "value":  "0 1px 2px 0 rgba(26, 26, 31, 0.06), 0 1px 3px 0 rgba(26, 26, 31, 0.04)",
+      "usage":  "Resting cards, list rows, inputs on focus."
+    },
+    "md": {
+      "value":  "0 4px 8px -2px rgba(26, 26, 31, 0.10), 0 2px 4px -2px rgba(26, 26, 31, 0.06)",
+      "usage":  "Hover cards, dropdowns, popovers."
+    },
+    "lg": {
+      "value":  "0 16px 32px -8px rgba(26, 26, 31, 0.18), 0 8px 16px -8px rgba(26, 26, 31, 0.10)",
+      "usage":  "Modals, bottom sheets, floating action buttons."
+    },
+    "glowCoral": {
+      "value":  "0 8px 24px -6px rgba(255, 90, 54, 0.45)",
+      "usage":  "Primary CTA hover, energetic moments."
+    },
+    "glowMint": {
+      "value":  "0 8px 24px -6px rgba(0, 212, 168, 0.40)",
+      "usage":  "Success states, completed run cards."
+    }
+  }
+}

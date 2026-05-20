@@ -1,0 +1,78 @@
+[
+  {
+    "id": "milestone_km_neutral_en",
+    "trigger": "every_km",
+    "category": "milestone",
+    "style": "neutral",
+    "lang": "en-US",
+    "templates": [
+      "Completed {km} kilometers. Current pace {pace}.",
+      "{km} kilometers done. You are running at {pace} per kilometer.",
+      "Just hit {km} K. Heart rate {hr}, pace {pace}.",
+      "Past the {km} K mark. Average pace {pace}.",
+      "Kilometer {km} complete. Pace {pace}.",
+      "You have covered {km} K. Pace {pace}, keep it steady.",
+      "{km} K. Pace {pace}. Keep going.",
+      "Through {km} kilometers. Current pace {pace}.",
+      "{km} K mark passed. Pace {pace}.",
+      "You have run {km} kilometers. Pace {pace} per K."
+    ]
+  },
+  {
+    "id": "milestone_km_gentle_en",
+    "trigger": "every_km",
+    "category": "milestone",
+    "style": "gentle",
+    "lang": "en-US",
+    "templates": [
+      "You just finished {km} K. Wonderful.",
+      "{km} K already. You are doing great.",
+      "Kilometer {km}. Take a deep breath.",
+      "{km} K done. Easy and steady wins.",
+      "{km} K. You are strong.",
+      "Past the {km} mark. Be proud.",
+      "{km} K. Every step matters.",
+      "Completed {km} K. Thank yourself for showing up.",
+      "You have covered {km} K. Slow and steady.",
+      "{km} K done. You are taking great care of yourself."
+    ]
+  },
+  {
+    "id": "milestone_km_drill_en",
+    "trigger": "every_km",
+    "category": "milestone",
+    "style": "drill",
+    "lang": "en-US",
+    "templates": [
+      "{km} K done. Push on.",
+      "Past {km} K. Do not stop.",
+      "Kilometer {km}. Stay on pace.",
+      "{km} K down. More to go, push.",
+      "Mark {km} is yours. Move forward.",
+      "{km} K. Hold the rhythm, push harder.",
+      "Through {km} K. Body is getting stronger.",
+      "{km} K! Pick up the pace.",
+      "You crushed {km}. Crush {km_plus_one}.",
+      "{km} K complete. Do not let the body rest."
+    ]
+  },
+  {
+    "id": "milestone_km_funny_en",
+    "trigger": "every_km",
+    "category": "milestone",
+    "style": "funny",
+    "lang": "en-US",
+    "templates": [
+      "{km} K done. Pizza is waiting.",
+      "Mark {km} K. Harder than waking up Monday.",
+      "{km} K. Your shoes are filing a complaint.",
+      "Past {km} K. Coffee from this morning is earning its keep.",
+      "Kilometer {km}. The pavement looks impressed.",
+      "{km} K. The road is longer than a Korean drama.",
+      "Through {km} K. Calories are crying.",
+      "{km} K done. Ice cream tastes better after this.",
+      "Mark {km}. You are faster than rush-hour traffic.",
+      "{km} K. Your couch will need a moment."
+    ]
+  }
+]

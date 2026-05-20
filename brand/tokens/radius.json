@@ -1,0 +1,22 @@
+{
+  "$schema": "runvie-design-tokens-v1",
+  "description": "Corner radius scale. Cards and modals lean larger to feel friendly and modern.",
+  "scale": {
+    "none": "0px",
+    "sm":   "6px",
+    "md":   "12px",
+    "lg":   "20px",
+    "xl":   "32px",
+    "full": "9999px"
+  },
+  "usage": {
+    "button":   "{scale.full}",
+    "chip":     "{scale.full}",
+    "input":    "{scale.md}",
+    "card":     "{scale.lg}",
+    "modal":    "{scale.xl}",
+    "image":    "{scale.lg}",
+    "avatar":   "{scale.full}",
+    "tooltip":  "{scale.sm}"
+  }
+}

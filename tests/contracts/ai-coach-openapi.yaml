@@ -1,0 +1,245 @@
+openapi: 3.1.0
+info:
+  title: RunVie AI Coach API
+  version: 0.1.0
+  description: |
+    Internal API exposed by the AI Coach FastAPI service. Used by the Flutter
+    client and post-run jobs to generate plans, post-run analyses and
+    streaming chat responses.
+servers:
+  - url: https://ai.runvie.app
+    description: Production
+  - url: https://ai.staging.runvie.app
+    description: Staging
+security:
+  - bearerAuth: []
+paths:
+  /health:
+    get:
+      summary: Liveness probe
+      security: []
+      responses:
+        "200":
+          description: Service is up
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Health"
+  /metrics:
+    get:
+      summary: Prometheus metrics
+      security: []
+      responses:
+        "200":
+          description: Prometheus exposition format
+          content:
+            text/plain:
+              schema:
+                type: string
+  /v1/chat:
+    post:
+      summary: One-shot chat completion
+      operationId: chat
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ChatRequest"
+      responses:
+        "200":
+          description: Chat reply
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ChatReply"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "429":
+          $ref: "#/components/responses/RateLimited"
+  /v1/chat/stream:
+    post:
+      summary: Server-sent events streaming chat
+      operationId: chatStream
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ChatRequest"
+      responses:
+        "200":
+          description: SSE stream of partial replies
+          content:
+            text/event-stream:
+              schema:
+                type: string
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "429":
+          $ref: "#/components/responses/RateLimited"
+  /v1/training-plan:
+    post:
+      summary: Generate a personalised training plan
+      operationId: generateTrainingPlan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TrainingPlanRequest"
+      responses:
+        "200":
+          description: Plan returned
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TrainingPlan"
+  /v1/post-run:
+    post:
+      summary: Post-run analysis
+      operationId: postRunAnalysis
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PostRunRequest"
+      responses:
+        "200":
+          description: Analysis returned
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PostRunAnalysis"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  responses:
+    Unauthorized:
+      description: Missing or invalid auth token
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    RateLimited:
+      description: Too many requests
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+  schemas:
+    Health:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+          enum: [ok, degraded]
+        version:
+          type: string
+    ChatRequest:
+      type: object
+      required: [message]
+      properties:
+        message:
+          type: string
+          minLength: 1
+          maxLength: 4000
+        history:
+          type: array
+          items:
+            $ref: "#/components/schemas/ChatTurn"
+        context:
+          type: object
+          additionalProperties: true
+    ChatTurn:
+      type: object
+      required: [role, content]
+      properties:
+        role:
+          type: string
+          enum: [user, assistant, system]
+        content:
+          type: string
+    ChatReply:
+      type: object
+      required: [reply]
+      properties:
+        reply:
+          type: string
+        usage:
+          type: object
+          properties:
+            input_tokens: { type: integer, minimum: 0 }
+            output_tokens: { type: integer, minimum: 0 }
+        request_id:
+          type: string
+    TrainingPlanRequest:
+      type: object
+      required: [goal, weeks]
+      properties:
+        goal:
+          type: string
+          enum: [5k, 10k, half_marathon, marathon, general_fitness]
+        weeks:
+          type: integer
+          minimum: 1
+          maximum: 24
+        weekly_km:
+          type: number
+        fitness_level:
+          type: string
+          enum: [beginner, intermediate, advanced]
+    TrainingPlan:
+      type: object
+      required: [weeks]
+      properties:
+        weeks:
+          type: array
+          items:
+            $ref: "#/components/schemas/PlanWeek"
+    PlanWeek:
+      type: object
+      required: [index, sessions]
+      properties:
+        index: { type: integer }
+        sessions:
+          type: array
+          items:
+            type: object
+            required: [day, type, distance_km]
+            properties:
+              day: { type: string }
+              type: { type: string }
+              distance_km: { type: number }
+              notes: { type: string }
+    PostRunRequest:
+      type: object
+      required: [activity_id]
+      properties:
+        activity_id: { type: string, format: uuid }
+        distance_km: { type: number }
+        duration_s: { type: integer }
+        avg_pace_s_per_km: { type: number }
+    PostRunAnalysis:
+      type: object
+      required: [summary]
+      properties:
+        summary: { type: string }
+        coaching_tips:
+          type: array
+          items: { type: string }
+        suggested_next_session:
+          type: object
+          additionalProperties: true
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error: { type: string }
+        message: { type: string }
+        request_id: { type: string }
