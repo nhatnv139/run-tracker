@@ -6,6 +6,8 @@ import 'package:go_router/go_router.dart';
 import 'package:runvie/core/constants.dart';
 import 'package:runvie/core/router/router.dart';
 import 'package:runvie/core/theme/aurora_theme.dart';
+import 'package:runvie/features/settings/models/app_settings.dart';
+import 'package:runvie/features/settings/providers/settings_providers.dart';
 
 class RunVieApp extends ConsumerWidget {
   const RunVieApp({super.key});
@@ -13,12 +15,14 @@ class RunVieApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final GoRouter router = ref.watch(routerProvider);
+    final AppSettings settings =
+        ref.watch(appSettingsProvider).valueOrNull ?? const AppSettings();
     return MaterialApp.router(
       title: AppConstants.appName,
       debugShowCheckedModeBanner: false,
       theme: AuroraTheme.light(),
       darkTheme: AuroraTheme.dark(),
-      themeMode: ThemeMode.system,
+      themeMode: settings.themeMode,
       routerConfig: router,
       locale: const Locale('vi', 'VN'),
       supportedLocales: const <Locale>[

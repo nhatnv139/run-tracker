@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:runvie/core/router/routes.dart';
+import 'package:runvie/features/activity/presentation/activity_detail_screen.dart';
 import 'package:runvie/features/activity/presentation/activity_screen.dart';
 import 'package:runvie/features/auth/presentation/email_otp_screen.dart';
 import 'package:runvie/features/auth/presentation/email_otp_verify_screen.dart';
@@ -22,9 +23,13 @@ import 'package:runvie/features/onboarding/presentation/paywall_screen.dart';
 import 'package:runvie/features/onboarding/presentation/permission_screen.dart';
 import 'package:runvie/features/onboarding/presentation/personalize_screen.dart';
 import 'package:runvie/features/onboarding/presentation/welcome_screen.dart';
+import 'package:runvie/features/plan/presentation/full_plan_screen.dart';
 import 'package:runvie/features/plan/presentation/plan_screen.dart';
+import 'package:runvie/features/profile/presentation/edit_profile_screen.dart';
 import 'package:runvie/features/profile/presentation/profile_screen.dart';
+import 'package:runvie/features/run/presentation/post_run_screen.dart';
 import 'package:runvie/features/run/presentation/run_screen.dart';
+import 'package:runvie/features/settings/presentation/settings_screen.dart';
 import 'package:runvie/features/social/presentation/social_screen.dart';
 import 'package:runvie/features/streak/presentation/streak_screen.dart';
 import 'package:runvie/features/subscription/presentation/manage_subscription_screen.dart';
@@ -147,6 +152,46 @@ final Provider<GoRouter> routerProvider = Provider<GoRouter>((Ref ref) {
         parentNavigatorKey: _rootNavKey,
         builder: (BuildContext context, GoRouterState state) =>
             const TransactionHistoryScreen(),
+      ),
+
+      // Activity detail / Post-run
+      GoRoute(
+        path: AppRoutes.activityDetail,
+        parentNavigatorKey: _rootNavKey,
+        builder: (BuildContext context, GoRouterState state) {
+          final int id = int.tryParse(state.pathParameters['id'] ?? '') ?? 0;
+          return ActivityDetailScreen(activityId: id);
+        },
+      ),
+      GoRoute(
+        path: AppRoutes.postRun,
+        parentNavigatorKey: _rootNavKey,
+        builder: (BuildContext context, GoRouterState state) {
+          final int id = int.tryParse(state.pathParameters['id'] ?? '') ?? 0;
+          return PostRunScreen(activityId: id);
+        },
+      ),
+
+      // Plan full view
+      GoRoute(
+        path: AppRoutes.planFull,
+        parentNavigatorKey: _rootNavKey,
+        builder: (BuildContext context, GoRouterState state) =>
+            const FullPlanScreen(),
+      ),
+
+      // Profile / Settings
+      GoRoute(
+        path: AppRoutes.editProfile,
+        parentNavigatorKey: _rootNavKey,
+        builder: (BuildContext context, GoRouterState state) =>
+            const EditProfileScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.settings,
+        parentNavigatorKey: _rootNavKey,
+        builder: (BuildContext context, GoRouterState state) =>
+            const SettingsScreen(),
       ),
 
       // Paywall / Subscription

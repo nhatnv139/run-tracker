@@ -124,16 +124,19 @@ class ChatController extends Notifier<ChatState> {
   Future<void> _loadHistory() async {
     try {
       final List<ChatMessage> history = await _repo.loadHistory();
-      if (!ref.mounted) return;
       state = state.copyWith(
         messages: history,
         hasLoadedHistory: true,
       );
-    } catch (e) {
-      state = state.copyWith(
-        hasLoadedHistory: true,
-        error: 'Không tải được lịch sử.',
-      );
+    } catch (_) {
+      try {
+        state = state.copyWith(
+          hasLoadedHistory: true,
+          error: 'Không tải được lịch sử.',
+        );
+      } catch (_) {
+        // Notifier already disposed.
+      }
     }
   }
 

@@ -39,4 +39,17 @@ class AppRoutes {
   // Subscription / paywall
   static const String paywall = '/paywall';
   static const String manageSubscription = '/subscription/manage';
+
+  // Profile / Settings
+  static const String editProfile = '/profile/edit';
+  static const String settings = '/settings';
+
+  // Activity / Post-Run
+  static const String activityDetail = '/activity/:id';
+  static String activityDetailPath(int id) => '/activity/$id';
+  static const String postRun = '/run/post/:id';
+  static String postRunPath(int id) => '/run/post/$id';
+
+  // Plan
+  static const String planFull = '/plan/full';
 }

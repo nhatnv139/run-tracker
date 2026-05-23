@@ -63,25 +63,29 @@ class AuroraButton extends StatelessWidget {
           child: content,
         );
       case AuroraButtonVariant.gradient:
-        return Material(
-          color: Colors.transparent,
-          child: InkWell(
-            onTap: loading ? null : onPressed,
-            borderRadius: BorderRadius.circular(AuroraSpacing.radiusLg),
-            child: Ink(
-              decoration: BoxDecoration(
-                gradient: AuroraColors.auroraLinear,
-                borderRadius: BorderRadius.circular(AuroraSpacing.radiusLg),
-              ),
-              height: AuroraSpacing.primaryButtonHeight,
-              width: expand ? double.infinity : null,
-              child: DefaultTextStyle.merge(
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 17,
+        final bool disabled = loading || onPressed == null;
+        return Opacity(
+          opacity: disabled ? 0.45 : 1,
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              onTap: disabled ? null : onPressed,
+              borderRadius: BorderRadius.circular(AuroraSpacing.radiusLg),
+              child: Ink(
+                decoration: BoxDecoration(
+                  gradient: AuroraColors.auroraLinear,
+                  borderRadius: BorderRadius.circular(AuroraSpacing.radiusLg),
                 ),
-                child: Center(child: content),
+                height: AuroraSpacing.primaryButtonHeight,
+                width: expand ? double.infinity : null,
+                child: DefaultTextStyle.merge(
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 17,
+                  ),
+                  child: Center(child: content),
+                ),
               ),
             ),
           ),

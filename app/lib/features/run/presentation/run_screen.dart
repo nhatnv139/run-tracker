@@ -2,11 +2,36 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import 'package:runvie/core/router/routes.dart';
 import 'package:runvie/core/theme/aurora_theme.dart';
 import 'package:runvie/core/theme/colors.dart';
 import 'package:runvie/core/theme/spacing.dart';
 import 'package:runvie/core/theme/typography.dart';
+import 'package:runvie/data/models/activity.dart';
+import 'package:runvie/features/activity/providers/activity_providers.dart';
 import 'package:runvie/features/run/providers/run_session_provider.dart';
+
+Future<void> _finishRun(BuildContext context, WidgetRef ref) async {
+  final RunSessionState run = ref.read(runSessionProvider);
+  ref.read(runSessionProvider.notifier).stop();
+  final Activity saved = await ref.read(activityRepositoryProvider).save(
+        Activity(
+          id: 0,
+          type: ActivityType.run,
+          startedAt: DateTime.now().subtract(run.elapsed),
+          endedAt: DateTime.now(),
+          distanceMeters: run.distanceMeters,
+          duration: run.elapsed,
+          avgPaceSecPerKm: run.distanceMeters > 0
+              ? run.elapsed.inSeconds / (run.distanceMeters / 1000)
+              : 0,
+          calories: run.calories,
+          syncStatus: ActivitySyncStatus.pending,
+        ),
+      );
+  if (!context.mounted) return;
+  context.go(AppRoutes.postRunPath(saved.id));
+}
 
 class RunScreen extends ConsumerWidget {
   const RunScreen({super.key});
@@ -38,7 +63,11 @@ class RunScreen extends ConsumerWidget {
               const SizedBox(height: AuroraSpacing.xxl),
               _SecondaryRow(run: run),
               const Spacer(),
-              _Controls(state: run, controller: ctrl),
+              _Controls(
+                state: run,
+                controller: ctrl,
+                onFinish: () => _finishRun(context, ref),
+              ),
               const SizedBox(height: AuroraSpacing.xxl),
             ],
           ),
@@ -211,9 +240,14 @@ class _SecondaryMetric extends StatelessWidget {
 }
 
 class _Controls extends StatelessWidget {
-  const _Controls({required this.state, required this.controller});
+  const _Controls({
+    required this.state,
+    required this.controller,
+    required this.onFinish,
+  });
   final RunSessionState state;
   final RunSessionController controller;
+  final VoidCallback onFinish;
 
   @override
   Widget build(BuildContext context) {
@@ -237,7 +271,7 @@ class _Controls extends StatelessWidget {
         _BigButton(
           icon: Icons.stop_rounded,
           color: AuroraColors.error,
-          onPressed: controller.stop,
+          onPressed: onFinish,
         ),
         const SizedBox(width: AuroraSpacing.xxl),
         _BigButton(

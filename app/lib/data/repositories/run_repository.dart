@@ -1,3 +1,5 @@
+import 'package:drift/drift.dart';
+
 import 'package:runvie/data/local/app_database.dart';
 
 /// Local-first run repository. Sync to Supabase happens via remote/.
